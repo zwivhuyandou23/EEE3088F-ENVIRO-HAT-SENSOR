@@ -1,6 +1,6 @@
 (kicad_sch (version 20230121) (generator eeschema)
 
-  (uuid 7e8c9ffe-1b32-4326-ae61-8877b5395b8a)
+  (uuid 81c41bad-bb43-41af-b405-18d135a809b1)
 
   (paper "A4")
 
@@ -8,53 +8,53 @@
   )
 
 
-  (sheet (at 50.7492 122.2756) (size 37.4904 47.3964) (fields_autoplaced)
+  (sheet (at 131.3688 89.0524) (size 40.5384 28.5496) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))
-    (uuid 85ab1145-05e5-48dc-b931-575008e2a664)
-    (property "Sheetname" "SENSORS" (at 50.7492 121.564 0)
+    (uuid 348a9f43-3fd2-4c4b-9a9a-df7968334a2a)
+    (property "Sheetname" "MCU" (at 131.3688 88.3408 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheetfile" "SENSOR.kicad_sch" (at 50.7492 170.2566 0)
+    (property "Sheetfile" "MCU.kicad_sch" (at 131.3688 118.1866 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
       (project "Main Schematic"
-        (path "/7e8c9ffe-1b32-4326-ae61-8877b5395b8a" (page "4"))
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1" (page "2"))
       )
     )
   )
 
-  (sheet (at 49.6316 61.1632) (size 39.2176 34.8996) (fields_autoplaced)
+  (sheet (at 72.2376 116.7892) (size 33.6804 25.4508) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))
-    (uuid 98e117a5-3aeb-416f-98c5-160b7cf15fec)
-    (property "Sheetname" "Power Unit" (at 49.6316 60.4516 0)
+    (uuid 52a56690-43dc-47bf-9821-f8582553274a)
+    (property "Sheetname" "Sensor" (at 72.2376 116.0776 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheetfile" "PowerUnit_sch.kicad_sch" (at 49.6316 96.6474 0)
+    (property "Sheetfile" "Sensor.kicad_sch" (at 72.2376 142.8246 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
       (project "Main Schematic"
-        (path "/7e8c9ffe-1b32-4326-ae61-8877b5395b8a" (page "3"))
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1" (page "4"))
       )
     )
   )
 
-  (sheet (at 116.2304 83.7692) (size 53.6956 56.7944) (fields_autoplaced)
+  (sheet (at 73.8632 67.1068) (size 33.8836 27.0764) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))
-    (uuid cdb7122d-3b94-4990-9cd4-7bfe20b23214)
-    (property "Sheetname" "MCU" (at 116.2304 83.0576 0)
+    (uuid be77d6c5-6f74-462b-ad7c-0ffad190e576)
+    (property "Sheetname" "Power Unit" (at 73.8632 66.3952 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheetfile" "untitled.kicad_sch" (at 116.2304 141.1482 0)
+    (property "Sheetfile" "PowerUnit.kicad_sch" (at 73.8632 94.7678 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
       (project "Main Schematic"
-        (path "/7e8c9ffe-1b32-4326-ae61-8877b5395b8a" (page "2"))
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1" (page "3"))
       )
     )
   )

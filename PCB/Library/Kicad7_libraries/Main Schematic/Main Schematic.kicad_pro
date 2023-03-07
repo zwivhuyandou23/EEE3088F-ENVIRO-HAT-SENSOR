@@ -324,20 +324,20 @@
   },
   "sheets": [
     [
-      "7e8c9ffe-1b32-4326-ae61-8877b5395b8a",
+      "81c41bad-bb43-41af-b405-18d135a809b1",
       ""
     ],
     [
-      "cdb7122d-3b94-4990-9cd4-7bfe20b23214",
+      "348a9f43-3fd2-4c4b-9a9a-df7968334a2a",
       "MCU"
     ],
     [
-      "98e117a5-3aeb-416f-98c5-160b7cf15fec",
+      "be77d6c5-6f74-462b-ad7c-0ffad190e576",
       "Power Unit"
     ],
     [
-      "85ab1145-05e5-48dc-b931-575008e2a664",
-      "SENSORS"
+      "52a56690-43dc-47bf-9821-f8582553274a",
+      "Sensor"
     ]
   ],
   "text_variables": {}
