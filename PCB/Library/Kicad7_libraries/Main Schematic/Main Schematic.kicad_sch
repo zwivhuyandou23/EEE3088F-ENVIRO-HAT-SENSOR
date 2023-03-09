@@ -8,6 +8,15 @@
   )
 
 
+  (hierarchical_label "SCL" (shape input) (at 131.5212 100.6856 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 7b126417-6e5b-4343-9575-28c6ec2058fc)
+  )
+  (hierarchical_label "SDL" (shape input) (at 131.4704 96.6216 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid de6338c8-5776-46f3-b6e1-99741de5a0be)
+  )
+
   (sheet (at 131.3688 89.0524) (size 40.5384 28.5496) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))
