@@ -328,16 +328,16 @@
       ""
     ],
     [
-      "348a9f43-3fd2-4c4b-9a9a-df7968334a2a",
-      "MCU"
-    ],
-    [
-      "be77d6c5-6f74-462b-ad7c-0ffad190e576",
+      "297def35-fe1a-4185-9e34-6248c2c818f7",
       "Power Unit"
     ],
     [
-      "52a56690-43dc-47bf-9821-f8582553274a",
+      "820a1ce6-42c1-4792-8ad0-5e2a5c074ed4",
       "Sensor"
+    ],
+    [
+      "ae15d31d-f7b4-4051-b9d0-3a01939afe0e",
+      "MCU"
     ]
   ],
   "text_variables": {}

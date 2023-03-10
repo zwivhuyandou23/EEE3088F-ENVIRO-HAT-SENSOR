@@ -696,8 +696,8 @@
     (pin "1" (uuid 3a934f89-6aa8-4c7e-b169-e86c76325d29))
     (instances
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/52a56690-43dc-47bf-9821-f8582553274a"
-          (reference "#PWR08") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
+          (reference "#PWR011") (unit 1)
         )
       )
       (project "sensing"
@@ -726,8 +726,8 @@
     (pin "1" (uuid 36cc2553-a1d1-4171-9752-4861899d8cbe))
     (instances
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/52a56690-43dc-47bf-9821-f8582553274a"
-          (reference "#PWR05") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
+          (reference "#PWR010") (unit 1)
         )
       )
       (project "sensing"
@@ -756,7 +756,7 @@
     (pin "1" (uuid bbc4b8f7-6dc1-4cad-8e5e-7c52dba1d460))
     (instances
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/52a56690-43dc-47bf-9821-f8582553274a"
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
           (reference "TP1") (unit 1)
         )
       )
@@ -786,7 +786,7 @@
     (pin "1" (uuid a628bf78-6886-44af-ac25-63aadb31aaa1))
     (instances
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/52a56690-43dc-47bf-9821-f8582553274a"
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
           (reference "#FLG01") (unit 1)
         )
       )
@@ -847,7 +847,7 @@
     (pin "8" (uuid 25517415-82c1-421c-8db6-888dda7eaddd))
     (instances
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/52a56690-43dc-47bf-9821-f8582553274a"
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
           (reference "IC1") (unit 1)
         )
       )
@@ -878,8 +878,8 @@
     (pin "2" (uuid bc319ba3-f69c-4aa2-bd1a-046a74c9f285))
     (instances
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/52a56690-43dc-47bf-9821-f8582553274a"
-          (reference "R5") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
+          (reference "R9") (unit 1)
         )
       )
       (project "sensing"
@@ -908,8 +908,8 @@
     (pin "1" (uuid 6fe8c145-0f53-462b-a738-2ae96c24e23f))
     (instances
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/52a56690-43dc-47bf-9821-f8582553274a"
-          (reference "#PWR09") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
+          (reference "#PWR012") (unit 1)
         )
       )
     )
@@ -934,8 +934,8 @@
     (pin "2" (uuid 1e9a84f8-ba12-4a89-bf87-c8d3df050387))
     (instances
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/52a56690-43dc-47bf-9821-f8582553274a"
-          (reference "R4") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
+          (reference "R8") (unit 1)
         )
       )
       (project "sensing"
@@ -975,8 +975,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/52a56690-43dc-47bf-9821-f8582553274a"
-          (reference "R6") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
+          (reference "R10") (unit 1)
         )
       )
       (project "SENSOR"
@@ -1005,7 +1005,7 @@
     (pin "1" (uuid 8c17281d-4390-4d81-99e3-ebebb5d20223))
     (instances
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/52a56690-43dc-47bf-9821-f8582553274a"
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
           (reference "TP2") (unit 1)
         )
       )
@@ -1046,8 +1046,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/52a56690-43dc-47bf-9821-f8582553274a"
-          (reference "R7") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
+          (reference "R11") (unit 1)
         )
       )
       (project "SENSOR"
@@ -1076,7 +1076,7 @@
     (pin "1" (uuid a4a5c5bc-35a8-4bb0-b46a-c91becf05c29))
     (instances
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/52a56690-43dc-47bf-9821-f8582553274a"
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
           (reference "TP4") (unit 1)
         )
       )
@@ -1111,8 +1111,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/52a56690-43dc-47bf-9821-f8582553274a"
-          (reference "#PWR010") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
+          (reference "#PWR013") (unit 1)
         )
       )
       (project "SENSOR"
@@ -1142,8 +1142,8 @@
     (pin "2" (uuid a4441e6c-d029-4182-8e5c-f795a8eac459))
     (instances
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/52a56690-43dc-47bf-9821-f8582553274a"
-          (reference "R1") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
+          (reference "R7") (unit 1)
         )
       )
       (project "sensing"
@@ -1173,8 +1173,8 @@
     (pin "2" (uuid 2e3aa72a-8ed7-472f-a9d2-ff9d766fcf81))
     (instances
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/52a56690-43dc-47bf-9821-f8582553274a"
-          (reference "C1") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
+          (reference "C9") (unit 1)
         )
       )
       (project "sensing"
@@ -1203,8 +1203,8 @@
     (pin "1" (uuid d874bd07-13f7-4549-84bd-cd7c33559eec))
     (instances
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/52a56690-43dc-47bf-9821-f8582553274a"
-          (reference "#PWR01") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
+          (reference "#PWR09") (unit 1)
         )
       )
       (project "sensing"
@@ -1233,7 +1233,7 @@
     (pin "1" (uuid 09321d1d-5e5a-440d-bbb2-c10aa1adbb92))
     (instances
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/52a56690-43dc-47bf-9821-f8582553274a"
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
           (reference "TP3") (unit 1)
         )
       )

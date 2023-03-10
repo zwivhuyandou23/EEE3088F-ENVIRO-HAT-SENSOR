@@ -1459,8 +1459,8 @@
     (pin "2" (uuid 17f84c0b-a1c0-4801-8048-5ea8fee24da9))
     (instances
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/348a9f43-3fd2-4c4b-9a9a-df7968334a2a"
-          (reference "R2") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
+          (reference "R13") (unit 1)
         )
       )
       (project "Microcontroller Design"
@@ -1494,8 +1494,8 @@
     (pin "1" (uuid b6b44239-92e2-4a73-9944-dc52cdbfaace))
     (instances
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/348a9f43-3fd2-4c4b-9a9a-df7968334a2a"
-          (reference "#PWR03") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
+          (reference "#PWR014") (unit 1)
         )
       )
       (project "Microcontroller Design"
@@ -1535,8 +1535,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/348a9f43-3fd2-4c4b-9a9a-df7968334a2a"
-          (reference "C7") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
+          (reference "C10") (unit 1)
         )
       )
       (project "Microcontroller Design"
@@ -1571,8 +1571,8 @@
     (pin "2" (uuid 6c64b92e-199b-4902-9f54-9518cc855c8f))
     (instances
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/348a9f43-3fd2-4c4b-9a9a-df7968334a2a"
-          (reference "R3") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
+          (reference "R12") (unit 1)
         )
       )
       (project "Microcontroller Design"
@@ -1611,8 +1611,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/348a9f43-3fd2-4c4b-9a9a-df7968334a2a"
-          (reference "#PWR028") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
+          (reference "#PWR020") (unit 1)
         )
       )
       (project "Microcontroller Design"
@@ -1646,8 +1646,8 @@
     (pin "1" (uuid fcd84b1a-8ae0-46b8-a176-7d72da416fc9))
     (instances
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/348a9f43-3fd2-4c4b-9a9a-df7968334a2a"
-          (reference "#PWR02") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
+          (reference "#PWR016") (unit 1)
         )
       )
       (project "Microcontroller Design"
@@ -1686,8 +1686,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/348a9f43-3fd2-4c4b-9a9a-df7968334a2a"
-          (reference "TP8") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
+          (reference "TP5") (unit 1)
         )
       )
       (project "Microcontroller Design"
@@ -1721,8 +1721,8 @@
     (pin "1" (uuid baf663a5-184c-4239-b556-70caf7ce4d91))
     (instances
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/348a9f43-3fd2-4c4b-9a9a-df7968334a2a"
-          (reference "#PWR06") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
+          (reference "#PWR017") (unit 1)
         )
       )
       (project "Microcontroller Design"
@@ -1762,8 +1762,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/348a9f43-3fd2-4c4b-9a9a-df7968334a2a"
-          (reference "J11") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
+          (reference "J3") (unit 1)
         )
       )
       (project "Microcontroller Design"
@@ -1797,8 +1797,8 @@
     (pin "1" (uuid 52d11420-9e50-478b-854e-f8d15382d6fb))
     (instances
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/348a9f43-3fd2-4c4b-9a9a-df7968334a2a"
-          (reference "#PWR07") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
+          (reference "#PWR018") (unit 1)
         )
       )
       (project "Microcontroller Design"
@@ -1832,8 +1832,8 @@
     (pin "1" (uuid 452f5f2c-accc-446a-b717-a2a87cd6fbf8))
     (instances
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/348a9f43-3fd2-4c4b-9a9a-df7968334a2a"
-          (reference "#PWR04") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
+          (reference "#PWR015") (unit 1)
         )
       )
       (project "Microcontroller Design"
@@ -1872,8 +1872,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/348a9f43-3fd2-4c4b-9a9a-df7968334a2a"
-          (reference "#PWR027") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
+          (reference "#PWR019") (unit 1)
         )
       )
       (project "Microcontroller Design"
@@ -1939,8 +1939,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/348a9f43-3fd2-4c4b-9a9a-df7968334a2a"
-          (reference "U3") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
+          (reference "U5") (unit 1)
         )
       )
       (project "Microcontroller Design"
@@ -2021,8 +2021,8 @@
     (pin "9" (uuid b8208b2c-e366-416f-b1bd-01a671548fa9))
     (instances
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/348a9f43-3fd2-4c4b-9a9a-df7968334a2a"
-          (reference "U1") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
+          (reference "U4") (unit 1)
         )
       )
       (project "Microcontroller Design"
@@ -2065,8 +2065,8 @@
     (pin "9" (uuid ac52c25c-93e7-4595-9c69-957b4f4d6a02))
     (instances
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/348a9f43-3fd2-4c4b-9a9a-df7968334a2a"
-          (reference "J1") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
+          (reference "J2") (unit 1)
         )
       )
       (project "Microcontroller Design"
@@ -2101,7 +2101,7 @@
     (pin "2" (uuid c381f360-3171-464c-ae24-f938468f7a1c))
     (instances
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/348a9f43-3fd2-4c4b-9a9a-df7968334a2a"
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
           (reference "SW1") (unit 1)
         )
       )
@@ -2141,8 +2141,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/348a9f43-3fd2-4c4b-9a9a-df7968334a2a"
-          (reference "#FLG05") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
+          (reference "#FLG02") (unit 1)
         )
       )
       (project "Microcontroller Design"
@@ -2181,8 +2181,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/348a9f43-3fd2-4c4b-9a9a-df7968334a2a"
-          (reference "TP9") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
+          (reference "TP6") (unit 1)
         )
       )
       (project "Microcontroller Design"
@@ -2196,9 +2196,5 @@
         )
       )
     )
-  )
-
-  (sheet_instances
-    (path "/" (page "1"))
   )
 )

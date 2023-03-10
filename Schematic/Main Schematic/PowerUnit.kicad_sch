@@ -1094,8 +1094,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
-          (reference "C8") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
+          (reference "C7") (unit 1)
         )
       )
       (project "PowerUnit_sch"
@@ -1135,8 +1135,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
-          (reference "C9") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
+          (reference "C8") (unit 1)
         )
       )
       (project "PowerUnit_sch"
@@ -1177,8 +1177,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
-          (reference "U6") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
+          (reference "U3") (unit 1)
         )
       )
       (project "PowerUnit_sch"
@@ -1218,8 +1218,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
-          (reference "R23") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
+          (reference "R4") (unit 1)
         )
       )
       (project "PowerUnit_sch"
@@ -1259,8 +1259,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
-          (reference "C7") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
+          (reference "C6") (unit 1)
         )
       )
       (project "PowerUnit_sch"
@@ -1303,8 +1303,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
-          (reference "U4") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
+          (reference "U1") (unit 1)
         )
       )
       (project "PowerUnit_sch"
@@ -1344,8 +1344,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
-          (reference "C3") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
+          (reference "C2") (unit 1)
         )
       )
       (project "PowerUnit_sch"
@@ -1384,8 +1384,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
-          (reference "#PWR014") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
+          (reference "#PWR02") (unit 1)
         )
       )
       (project "PowerUnit_sch"
@@ -1434,8 +1434,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
-          (reference "U5") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
+          (reference "U2") (unit 1)
         )
       )
       (project "PowerUnit_sch"
@@ -1474,8 +1474,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
-          (reference "#PWR020") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
+          (reference "#PWR08") (unit 1)
         )
       )
       (project "PowerUnit_sch"
@@ -1514,8 +1514,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
-          (reference "#PWR017") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
+          (reference "#PWR05") (unit 1)
         )
       )
       (project "PowerUnit_sch"
@@ -1555,8 +1555,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
-          (reference "C4") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
+          (reference "C3") (unit 1)
         )
       )
       (project "PowerUnit_sch"
@@ -1595,8 +1595,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
-          (reference "#PWR016") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
+          (reference "#PWR04") (unit 1)
         )
       )
       (project "PowerUnit_sch"
@@ -1636,8 +1636,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
-          (reference "R22") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
+          (reference "R3") (unit 1)
         )
       )
       (project "PowerUnit_sch"
@@ -1676,8 +1676,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
-          (reference "#PWR019") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
+          (reference "#PWR07") (unit 1)
         )
       )
       (project "PowerUnit_sch"
@@ -1717,8 +1717,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
-          (reference "R24") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
+          (reference "R5") (unit 1)
         )
       )
       (project "PowerUnit_sch"
@@ -1758,7 +1758,7 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
           (reference "BT1") (unit 1)
         )
       )
@@ -1799,8 +1799,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
-          (reference "R20") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
+          (reference "R1") (unit 1)
         )
       )
       (project "PowerUnit_sch"
@@ -1839,8 +1839,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
-          (reference "#PWR018") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
+          (reference "#PWR06") (unit 1)
         )
       )
       (project "PowerUnit_sch"
@@ -1880,8 +1880,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
-          (reference "C6") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
+          (reference "C5") (unit 1)
         )
       )
       (project "PowerUnit_sch"
@@ -1922,8 +1922,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
-          (reference "Q3") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
+          (reference "Q1") (unit 1)
         )
       )
       (project "PowerUnit_sch"
@@ -1963,8 +1963,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
-          (reference "C2") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
+          (reference "C1") (unit 1)
         )
       )
       (project "PowerUnit_sch"
@@ -2004,8 +2004,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
-          (reference "D13") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
+          (reference "D1") (unit 1)
         )
       )
       (project "PowerUnit_sch"
@@ -2044,8 +2044,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
-          (reference "#PWR015") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
+          (reference "#PWR03") (unit 1)
         )
       )
       (project "PowerUnit_sch"
@@ -2085,8 +2085,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
-          (reference "C5") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
+          (reference "C4") (unit 1)
         )
       )
       (project "PowerUnit_sch"
@@ -2126,7 +2126,7 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
           (reference "L1") (unit 1)
         )
       )
@@ -2167,8 +2167,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
-          (reference "R21") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
+          (reference "R2") (unit 1)
         )
       )
       (project "PowerUnit_sch"
@@ -2208,8 +2208,8 @@
         )
       )
       (project "Main Schematic"
-        (path "/81c41bad-bb43-41af-b405-18d135a809b1/be77d6c5-6f74-462b-ad7c-0ffad190e576"
-          (reference "R25") (unit 1)
+        (path "/81c41bad-bb43-41af-b405-18d135a809b1/297def35-fe1a-4185-9e34-6248c2c818f7"
+          (reference "R6") (unit 1)
         )
       )
       (project "PowerUnit_sch"
