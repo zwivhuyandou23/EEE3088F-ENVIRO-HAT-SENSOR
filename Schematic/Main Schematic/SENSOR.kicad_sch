@@ -632,6 +632,11 @@
     (uuid fab8563e-cc70-49d7-8a49-bcb6dfc6ce5c)
   )
 
+  (text "- The analogue circuit is suppose to detect how long e.g a plant was \nin the dark or experiencing less optimum sunlight thus such configuration\n- When the sunlight is getting dark or less optimum sunlight it should\n send a high voltage to the adc channel\n-  micro coding will have formula computing how long it experienced \ncertain conditions\n"
+    (at 154.94 83.0072 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 6580a109-8555-49cb-bc88-c0dc68b79a99)
+  )
   (text "Set internal ADC to connect PB0\n\n" (at 173.0756 110.2614 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 8a6e012f-ac5c-4da4-a883-209cbb3210fa)
@@ -653,10 +658,10 @@
     (uuid f33d82ca-e8e3-4336-a48b-a6d5d2594e46)
   )
 
-  (global_label "3.3V" (shape input) (at 164.2364 97.0534 0)
+  (global_label "3.3V" (shape input) (at 164.1856 97.1804 0)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid d2799e6f-7d26-41cc-b7cb-373999d4380d)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 164.2364 97.0534 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 164.1856 97.1804 0)
       (effects (font (size 1.27 1.27)) hide)
     )
   )
