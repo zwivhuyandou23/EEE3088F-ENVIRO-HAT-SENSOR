@@ -2486,7 +2486,7 @@
   (symbol (lib_id "Connector:Conn_01x10_Pin") (at 128.27 163.83 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d484b27e-1dc5-4231-a1ec-6705a706b1ff)
-    (property "Reference" "J7" (at 129.54 161.925 0)
+    (property "Reference" "J1" (at 129.54 161.925 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Conn_01x10_Pin" (at 129.54 164.465 0)
@@ -2511,7 +2511,7 @@
     (instances
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1"
-          (reference "J7") (unit 1)
+          (reference "J1") (unit 1)
         )
       )
     )
