@@ -655,11 +655,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid d7b54db2-769d-4ef4-ab2b-1a0343eeb18b)
   )
-  (text "OS - Overtemp Shutdown output; open-drain" (at 60.96 78.0542 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid ed0b7345-89a7-4bd8-9c0b-a2be05438bd9)
-  )
-  (text "- Pull-Up resistors for the SDA1 and SCL1\n- SDA, serial data line will be used to send data into the micro\n- SCL, serial clock line will be used for synchronization(changing the state of the SDL)\n- User defined address of the IC1 is 1001000\n- Least Significant Bits 000 are user defined by grounding the A0, A1, A2 pins\n- Most Significant Bits 1001 are internally preset"
+  (text "- Pull-Up resistors for the SDA1 and SCL1\n- SDA, serial data line will be used to send data into the micro\n- SCL, serial clock line will be used for synchronization(changing the state of the SDL)\n- User defined address of the IC1 is 1001000\n- Least Significant Bits 000 are user defined by grounding the A0, A1, A2 pins\n- Most Significant Bits 1001 are internally preset\n- OS - Overtemp Shutdown output; open-drain"
     (at 61.1632 74.5998 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid f33d82ca-e8e3-4336-a48b-a6d5d2594e46)
