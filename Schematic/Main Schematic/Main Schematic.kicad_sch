@@ -1236,7 +1236,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
   )
-  (global_label "SCL6" (shape input) (at 255.27 45.72 0) (fields_autoplaced)
+  (global_label "SCL1" (shape input) (at 255.27 45.72 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 7ea8bae5-391a-49a9-8b40-5bd35537b1b9)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 262.8929 45.72 0)
