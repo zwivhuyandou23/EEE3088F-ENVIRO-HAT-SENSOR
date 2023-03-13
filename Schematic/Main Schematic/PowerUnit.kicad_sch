@@ -4,6 +4,14 @@
 
   (paper "A4")
 
+  (title_block
+    (title "Power Unit")
+    (company "UCT")
+    (comment 2 "Power Management")
+    (comment 3 "Author: Talifhani Nemaangani")
+    (comment 4 "Team26")
+  )
+
   (lib_symbols
     (symbol "Connector:Conn_01x02_Male" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0 2.54 0)
@@ -1317,23 +1325,15 @@
     (uuid daf82e16-8dee-480a-9d4a-a15815ff8b16)
   )
 
-  (text "This part takes in the voltage from the battery supply or\nthe usb supply ,and provides a fixed 3.3V to other subsytem module"
+  (text "This part takes in the voltage from the battery supply or\nthe usb supply ,and provides a fixed 3.3V to other subsytems\n"
     (at 27.94 185.42 0)
     (effects (font (size 2 2)) (justify left bottom))
     (uuid 09ef5dc7-4126-45da-b00c-b2896967c605)
-  )
-  (text "Power management Unit\n" (at 189.23 191.77 0)
-    (effects (font (size 2 2)) (justify left bottom))
-    (uuid 26e9a771-38e4-4660-a7e8-b8aadece01fb)
   )
   (text "This part receives 5V from the SSB and gets transferred\n to the battery charger"
     (at 19.05 104.14 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 50ba4f1f-99f9-497b-a15b-0889679e891b)
-  )
-  (text "Author : Talifhani Nemaangani\n" (at 184.15 175.26 0)
-    (effects (font (size 2 2)) (justify left bottom))
-    (uuid 77268e0d-7220-4bc1-a246-b8145e0e2581)
   )
   (text "UVL\n\n\n" (at 147.32 52.07 0)
     (effects (font (size 2.5 2.5)) (justify left bottom))
