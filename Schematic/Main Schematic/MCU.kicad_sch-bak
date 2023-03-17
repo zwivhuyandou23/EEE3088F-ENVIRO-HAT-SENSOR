@@ -572,7 +572,7 @@
     (uuid ffd32301-23b0-4696-bcb9-d30712da658c)
   )
 
-  (text "TO-DO\n- Female headers should be inside MCU\n- UART Tx - Rx and Rx to Tx\n- Add Pull-up Resistors to SCL & SDA\n- Vcc connects to power not GND\n"
+  (text "TO-DO\n- Female headers should be inside MCU\n- UART Tx - Rx and Rx to Tx\n- Add Pull-up Resistors to SCL & SDA"
     (at 31.75 127 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 5736f1fd-cf78-4ce7-a1f0-7268bf55c0ba)
@@ -679,7 +679,7 @@
       )
       (project "main"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/59b42903-2dc7-4011-ab5b-d7b81bd233c3"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR030") (unit 1)
         )
       )
     )
@@ -709,7 +709,7 @@
       )
       (project "main"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/59b42903-2dc7-4011-ab5b-d7b81bd233c3"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR029") (unit 1)
         )
       )
     )
@@ -718,7 +718,7 @@
   (symbol (lib_id "Device:C") (at 104.14 41.91 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 194cf7da-6c27-4bfe-9f95-1e859558fd60)
-    (property "Reference" "C?" (at 104.14 34.29 90)
+    (property "Reference" "C7" (at 104.14 34.29 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100nF" (at 104.14 36.83 90)
@@ -735,22 +735,22 @@
     (instances
       (project "microcontroller_interfacing1"
         (path "/0910cb2b-5973-4d8a-ae14-7a1f346a65e3"
-          (reference "C?") (unit 1)
+          (reference "C7") (unit 1)
         )
       )
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
-          (reference "C7") (unit 1)
+          (reference "C10") (unit 1)
         )
       )
       (project "Microcontroller Design"
         (path "/b8d97438-63f4-433e-afdc-8e43ab7e4842"
-          (reference "C?") (unit 1)
+          (reference "C1") (unit 1)
         )
       )
       (project "MCU"
         (path "/e0666d22-e687-4adb-b95b-6588526d91f1"
-          (reference "C?") (unit 1)
+          (reference "C1") (unit 1)
         )
       )
     )
@@ -759,7 +759,7 @@
   (symbol (lib_id "power:GND") (at 116.84 46.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 20bb0d54-c465-42a5-a51a-90589ffc1905)
-    (property "Reference" "#PWR?" (at 116.84 53.34 0)
+    (property "Reference" "#PWR028" (at 116.84 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 120.015 48.895 0)
@@ -775,7 +775,7 @@
     (instances
       (project "microcontroller_interfacing1"
         (path "/0910cb2b-5973-4d8a-ae14-7a1f346a65e3"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR028") (unit 1)
         )
       )
       (project "Main Schematic"
@@ -785,12 +785,12 @@
       )
       (project "Microcontroller Design"
         (path "/b8d97438-63f4-433e-afdc-8e43ab7e4842"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
       (project "MCU"
         (path "/e0666d22-e687-4adb-b95b-6588526d91f1"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -799,7 +799,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 52.07 54.61 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 38e1f3c7-46f9-4296-8a88-6d20468a0929)
-    (property "Reference" "TP7" (at 53.3401 59.69 90)
+    (property "Reference" "TP5" (at 53.3401 59.69 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "~TP" (at 49.53 57.277 0)
@@ -815,12 +815,12 @@
     (instances
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
-          (reference "TP7") (unit 1)
+          (reference "TP5") (unit 1)
         )
       )
       (project "main"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/59b42903-2dc7-4011-ab5b-d7b81bd233c3"
-          (reference "TP?") (unit 1)
+          (reference "TP11") (unit 1)
         )
       )
     )
@@ -829,7 +829,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 52.07 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 58b4ded1-1dfc-4a8d-90d9-1c224993ba04)
-    (property "Reference" "TP6" (at 50.7999 46.99 90)
+    (property "Reference" "TP3" (at 50.7999 46.99 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "~TP" (at 54.61 49.403 0)
@@ -848,12 +848,12 @@
     (instances
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
-          (reference "TP6") (unit 1)
+          (reference "TP3") (unit 1)
         )
       )
       (project "main"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/59b42903-2dc7-4011-ab5b-d7b81bd233c3"
-          (reference "TP?") (unit 1)
+          (reference "TP11") (unit 1)
         )
       )
     )
@@ -862,7 +862,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 99.06 54.61 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 638db055-b7bd-47f3-b607-54d4f6cac127)
-    (property "Reference" "TP8" (at 100.3301 59.69 90)
+    (property "Reference" "TP6" (at 100.3301 59.69 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "~TP" (at 96.52 57.277 0)
@@ -878,12 +878,12 @@
     (instances
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
-          (reference "TP8") (unit 1)
+          (reference "TP6") (unit 1)
         )
       )
       (project "main"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/59b42903-2dc7-4011-ab5b-d7b81bd233c3"
-          (reference "TP?") (unit 1)
+          (reference "TP11") (unit 1)
         )
       )
     )
@@ -892,7 +892,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 234.95 64.77 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 73ce48fd-db6c-4e23-9189-5702886190e6)
-    (property "Reference" "TP11" (at 240.03 63.4999 90)
+    (property "Reference" "TP" (at 240.03 63.4999 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "SDA" (at 240.03 65.405 90)
@@ -908,12 +908,12 @@
     (instances
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
-          (reference "TP11") (unit 1)
+          (reference "TP") (unit 1)
         )
       )
       (project "main"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/59b42903-2dc7-4011-ab5b-d7b81bd233c3"
-          (reference "TP?") (unit 1)
+          (reference "TP11") (unit 1)
         )
       )
     )
@@ -943,7 +943,7 @@
       )
       (project "main"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/59b42903-2dc7-4011-ab5b-d7b81bd233c3"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR031") (unit 1)
         )
       )
     )
@@ -952,7 +952,7 @@
   (symbol (lib_id "Connector:Conn_01x02_Pin") (at 38.1 82.55 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 96297592-6653-4e71-b73b-1e6d9c83b108)
-    (property "Reference" "J7" (at 35.4584 80.3148 90)
+    (property "Reference" "J5" (at 35.4584 80.3148 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x02_Pin" (at 36.9824 81.1784 90)
@@ -969,7 +969,7 @@
     (instances
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
-          (reference "J7") (unit 1)
+          (reference "J5") (unit 1)
         )
       )
     )
@@ -978,7 +978,7 @@
   (symbol (lib_id "power:GND") (at 97.79 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9b533539-c753-4b5d-bf61-839fba7fd100)
-    (property "Reference" "#PWR?" (at 97.79 85.09 0)
+    (property "Reference" "#PWR027" (at 97.79 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 97.79 83.82 0)
@@ -994,7 +994,7 @@
     (instances
       (project "microcontroller_interfacing1"
         (path "/0910cb2b-5973-4d8a-ae14-7a1f346a65e3"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR027") (unit 1)
         )
       )
       (project "Main Schematic"
@@ -1004,12 +1004,12 @@
       )
       (project "Microcontroller Design"
         (path "/b8d97438-63f4-433e-afdc-8e43ab7e4842"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR08") (unit 1)
         )
       )
       (project "MCU"
         (path "/e0666d22-e687-4adb-b95b-6588526d91f1"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -1018,7 +1018,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 191.77 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9ed932ba-7b90-4585-81fb-00a60339478a)
-    (property "Reference" "TP10" (at 190.4999 52.07 90)
+    (property "Reference" "TP2" (at 190.4999 52.07 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "SCL" (at 194.31 54.483 0)
@@ -1034,12 +1034,12 @@
     (instances
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
-          (reference "TP10") (unit 1)
+          (reference "TP2") (unit 1)
         )
       )
       (project "main"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/59b42903-2dc7-4011-ab5b-d7b81bd233c3"
-          (reference "TP?") (unit 1)
+          (reference "TP11") (unit 1)
         )
       )
     )
@@ -1048,7 +1048,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 100.33 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b52ef9eb-f689-44db-8be0-9b8ece320052)
-    (property "Reference" "TP9" (at 99.0599 46.99 90)
+    (property "Reference" "TP7" (at 99.0599 46.99 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "~" (at 102.87 49.403 0)
@@ -1064,12 +1064,12 @@
     (instances
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
-          (reference "TP9") (unit 1)
+          (reference "TP7") (unit 1)
         )
       )
       (project "main"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/59b42903-2dc7-4011-ab5b-d7b81bd233c3"
-          (reference "TP?") (unit 1)
+          (reference "TP11") (unit 1)
         )
       )
     )
@@ -1078,7 +1078,7 @@
   (symbol (lib_id "CH340C:CH340C") (at 78.74 59.69 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cf5ba183-0147-43fc-9b5f-11de916cde8b)
-    (property "Reference" "U?" (at 78.74 34.29 0)
+    (property "Reference" "U3" (at 78.74 34.29 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "CH340C" (at 78.74 36.83 0)
@@ -1121,22 +1121,22 @@
     (instances
       (project "microcontroller_interfacing1"
         (path "/0910cb2b-5973-4d8a-ae14-7a1f346a65e3"
-          (reference "U?") (unit 1)
+          (reference "U3") (unit 1)
         )
       )
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
-          (reference "U3") (unit 1)
+          (reference "U5") (unit 1)
         )
       )
       (project "Microcontroller Design"
         (path "/b8d97438-63f4-433e-afdc-8e43ab7e4842"
-          (reference "U?") (unit 1)
+          (reference "U2") (unit 1)
         )
       )
       (project "MCU"
         (path "/e0666d22-e687-4adb-b95b-6588526d91f1"
-          (reference "U?") (unit 1)
+          (reference "U2") (unit 1)
         )
       )
     )
@@ -1145,7 +1145,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 241.3 59.69 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d2f51803-9f7e-4dfe-b609-36679248672f)
-    (property "Reference" "TP12" (at 240.0299 54.61 90)
+    (property "Reference" "TP1" (at 240.0299 54.61 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "Testing Point" (at 243.84 57.023 0)
@@ -1161,12 +1161,12 @@
     (instances
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
-          (reference "TP12") (unit 1)
+          (reference "TP1") (unit 1)
         )
       )
       (project "main"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/59b42903-2dc7-4011-ab5b-d7b81bd233c3"
-          (reference "TP?") (unit 1)
+          (reference "TP11") (unit 1)
         )
       )
     )
@@ -1175,7 +1175,7 @@
   (symbol (lib_id "Device:C") (at 250.19 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d4cd3f5d-fc6d-4fc8-b968-1c6c21f0f832)
-    (property "Reference" "C8" (at 254 62.2299 0)
+    (property "Reference" "C11" (at 254 62.2299 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10nF" (at 254 64.7699 0)
@@ -1192,12 +1192,12 @@
     (instances
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
-          (reference "C8") (unit 1)
+          (reference "C11") (unit 1)
         )
       )
       (project "main"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/59b42903-2dc7-4011-ab5b-d7b81bd233c3"
-          (reference "C?") (unit 1)
+          (reference "C8") (unit 1)
         )
       )
     )
@@ -1206,13 +1206,13 @@
   (symbol (lib_id "M24C16-RMN6TP:M24C16-RMN6TP") (at 215.9 64.77 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid faa6cca1-e3fd-4ae5-bbb6-7d81f0e3648e)
-    (property "Reference" "U4" (at 215.9 51.435 0)
+    (property "Reference" "U6" (at 215.9 51.435 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "M24C16-RMN6TP" (at 215.9 53.975 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "LM75AD:SOIC127P600X175-8N" (at 215.9 64.77 0)
+    (property "Footprint" "M24:SOIC127P600X175-8N" (at 215.9 64.77 0)
       (effects (font (size 1.27 1.27)) (justify left bottom) hide)
     )
     (property "Datasheet" "" (at 215.9 64.77 0)
@@ -1232,12 +1232,12 @@
     (instances
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/ae15d31d-f7b4-4051-b9d0-3a01939afe0e"
-          (reference "U4") (unit 1)
+          (reference "U6") (unit 1)
         )
       )
       (project "main"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/59b42903-2dc7-4011-ab5b-d7b81bd233c3"
-          (reference "U?") (unit 1)
+          (reference "U4") (unit 1)
         )
       )
     )

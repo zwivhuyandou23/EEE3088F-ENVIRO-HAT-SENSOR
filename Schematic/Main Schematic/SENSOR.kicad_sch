@@ -681,7 +681,7 @@
   (symbol (lib_id "power:GND") (at 110.6932 129.2606 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1a337a68-156a-4c77-9b84-e4645181e082)
-    (property "Reference" "#PWR011" (at 110.6932 135.6106 0)
+    (property "Reference" "#PWR015" (at 110.6932 135.6106 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 110.6932 134.3406 0)
@@ -697,12 +697,12 @@
     (instances
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
       (project "sensing"
         (path "/ae78189d-79c7-41a0-b77c-3bb766898352"
-          (reference "#PWR026") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -711,7 +711,7 @@
   (symbol (lib_id "power:GND") (at 87.8332 100.0506 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1d1a2279-3f09-436f-a81f-9fb66af22344)
-    (property "Reference" "#PWR010" (at 81.4832 100.0506 0)
+    (property "Reference" "#PWR014" (at 81.4832 100.0506 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 84.0232 100.0505 90)
@@ -727,12 +727,12 @@
     (instances
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
       )
       (project "sensing"
         (path "/ae78189d-79c7-41a0-b77c-3bb766898352"
-          (reference "#PWR025") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -741,7 +741,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 65.6082 125.4506 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2bc1a6fe-31dd-4908-9355-65b679d9c300)
-    (property "Reference" "TP1" (at 66.2432 124.1806 0)
+    (property "Reference" "TP2" (at 66.2432 124.1806 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "OS" (at 64.3382 127.3556 0)
@@ -757,12 +757,12 @@
     (instances
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
-          (reference "TP1") (unit 1)
+          (reference "TP2") (unit 1)
         )
       )
       (project "sensing"
         (path "/ae78189d-79c7-41a0-b77c-3bb766898352"
-          (reference "TP4") (unit 1)
+          (reference "TP?") (unit 1)
         )
       )
     )
@@ -771,7 +771,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 85.2932 132.4356 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4311e8be-779c-406d-bf4f-b61b8614e122)
-    (property "Reference" "#FLG01" (at 87.1982 132.4356 0)
+    (property "Reference" "#FLG03" (at 87.1982 132.4356 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 89.1032 132.4355 90)
@@ -787,12 +787,12 @@
     (instances
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
-          (reference "#FLG01") (unit 1)
+          (reference "#FLG03") (unit 1)
         )
       )
       (project "sensing"
         (path "/ae78189d-79c7-41a0-b77c-3bb766898352"
-          (reference "#FLG04") (unit 1)
+          (reference "#FLG?") (unit 1)
         )
       )
     )
@@ -801,13 +801,13 @@
   (symbol (lib_id "LM75:LM75AD,118") (at 85.2932 120.3706 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 51d00fed-127f-455a-b1d0-2697fa8e0c6a)
-    (property "Reference" "IC1" (at 97.9932 112.1156 0)
+    (property "Reference" "IC2" (at 97.9932 112.1156 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "LM75AD,118" (at 97.9932 114.6556 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "LM75:SOIC127P600X175-8N" (at 106.8832 117.8306 0)
+    (property "Footprint" "LM75AD:SOIC127P600X175-8N" (at 106.8832 117.8306 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Datasheet" "http://www.nxp.com/docs/en/data-sheet/LM75A.pdf" (at 106.8832 120.3706 0)
@@ -848,12 +848,12 @@
     (instances
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
-          (reference "IC1") (unit 1)
+          (reference "IC2") (unit 1)
         )
       )
       (project "sensing"
         (path "/ae78189d-79c7-41a0-b77c-3bb766898352"
-          (reference "IC2") (unit 1)
+          (reference "IC?") (unit 1)
         )
       )
     )
@@ -862,7 +862,7 @@
   (symbol (lib_id "Device:R") (at 78.9432 109.5756 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 59d97ee8-551a-493d-9330-9bf92a2e5769)
-    (property "Reference" "R9" (at 81.28 108.9406 0)
+    (property "Reference" "R8" (at 81.28 108.9406 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 81.28 111.4806 0)
@@ -879,12 +879,12 @@
     (instances
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
-          (reference "R9") (unit 1)
+          (reference "R8") (unit 1)
         )
       )
       (project "sensing"
         (path "/ae78189d-79c7-41a0-b77c-3bb766898352"
-          (reference "R8") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
     )
@@ -893,7 +893,7 @@
   (symbol (lib_id "power:+3V3") (at 113.1824 92.4306 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 69420925-146b-4c0c-a742-c929f1bfab80)
-    (property "Reference" "#PWR012" (at 113.1824 96.2406 0)
+    (property "Reference" "#PWR016" (at 113.1824 96.2406 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 113.1824 89.1794 0)
@@ -909,7 +909,7 @@
     (instances
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
       )
     )
@@ -918,7 +918,7 @@
   (symbol (lib_id "Device:R") (at 70.0532 109.5756 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 797d64b4-d831-4e79-9ce0-f26ace93b22d)
-    (property "Reference" "R8" (at 72.39 108.9406 0)
+    (property "Reference" "R7" (at 72.39 108.9406 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 72.39 111.4806 0)
@@ -935,12 +935,12 @@
     (instances
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
-          (reference "R8") (unit 1)
+          (reference "R7") (unit 1)
         )
       )
       (project "sensing"
         (path "/ae78189d-79c7-41a0-b77c-3bb766898352"
-          (reference "R7") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
     )
@@ -949,7 +949,7 @@
   (symbol (lib_id "Device:R") (at 164.1856 103.9114 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7bf38139-e4e7-427e-b0bc-22741c81f344)
-    (property "Reference" "R2" (at 166.116 103.2764 0)
+    (property "Reference" "R?" (at 166.116 103.2764 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 166.116 105.8164 0)
@@ -966,22 +966,22 @@
     (instances
       (project "EEE3088F SENSOR DRAFT"
         (path "/751b79e3-4b19-4a49-b43d-4a38407110a8"
-          (reference "R2") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
       (project "Main Schematic"
         (path "/7e8c9ffe-1b32-4326-ae61-8877b5395b8a/85ab1145-05e5-48dc-b931-575008e2a664"
-          (reference "R2") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
-          (reference "R10") (unit 1)
+          (reference "R9") (unit 1)
         )
       )
       (project "SENSOR"
         (path "/f5932ef5-369f-4014-aabe-82813000505a"
-          (reference "R2") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
     )
@@ -990,7 +990,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 71.9582 122.9106 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8e23db1a-f596-4c93-b31d-55a7a3501743)
-    (property "Reference" "TP2" (at 73.2282 119.1006 0)
+    (property "Reference" "TP3" (at 73.2282 119.1006 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SCL1" (at 72.5932 121.6406 0)
@@ -1006,12 +1006,12 @@
     (instances
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
-          (reference "TP2") (unit 1)
+          (reference "TP3") (unit 1)
         )
       )
       (project "sensing"
         (path "/ae78189d-79c7-41a0-b77c-3bb766898352"
-          (reference "TP5") (unit 1)
+          (reference "TP?") (unit 1)
         )
       )
     )
@@ -1020,7 +1020,7 @@
   (symbol (lib_id "Sensor_Optical:LDR07") (at 164.1856 117.5766 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8f07fd54-3fcd-407c-add8-ad7dc6eae037)
-    (property "Reference" "R1" (at 166.7256 116.9416 0)
+    (property "Reference" "R?" (at 166.7256 116.9416 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "LDR07" (at 166.7256 119.4816 0)
@@ -1037,22 +1037,22 @@
     (instances
       (project "EEE3088F SENSOR DRAFT"
         (path "/751b79e3-4b19-4a49-b43d-4a38407110a8"
-          (reference "R1") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
       (project "Main Schematic"
         (path "/7e8c9ffe-1b32-4326-ae61-8877b5395b8a/85ab1145-05e5-48dc-b931-575008e2a664"
-          (reference "R1") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
-          (reference "R11") (unit 1)
+          (reference "R10") (unit 1)
         )
       )
       (project "SENSOR"
         (path "/f5932ef5-369f-4014-aabe-82813000505a"
-          (reference "R1") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
     )
@@ -1061,7 +1061,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 180.4416 112.649 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 918ec5c4-c168-4dbc-8118-7a3f3c2ae0a0)
-    (property "Reference" "TP4" (at 178.5112 116.586 0)
+    (property "Reference" "TP5" (at 178.5112 116.586 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (at 178.5112 114.046 0)
@@ -1077,7 +1077,7 @@
     (instances
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
-          (reference "TP4") (unit 1)
+          (reference "TP5") (unit 1)
         )
       )
     )
@@ -1086,7 +1086,7 @@
   (symbol (lib_id "power:+3V3") (at 164.1856 97.1804 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 944c8cae-1345-4571-bfe8-ab2b85731010)
-    (property "Reference" "#PWR014" (at 164.1856 100.9904 0)
+    (property "Reference" "#PWR017" (at 164.1856 100.9904 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 164.1856 93.9292 0)
@@ -1102,7 +1102,7 @@
     (instances
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
     )
@@ -1111,7 +1111,7 @@
   (symbol (lib_id "power:GND") (at 164.1856 121.3866 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b0e3b18a-a445-4ced-ab65-cf57cb927254)
-    (property "Reference" "#PWR01" (at 164.1856 127.7366 0)
+    (property "Reference" "#PWR?" (at 164.1856 127.7366 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 164.1856 126.4666 0)
@@ -1127,22 +1127,22 @@
     (instances
       (project "EEE3088F SENSOR DRAFT"
         (path "/751b79e3-4b19-4a49-b43d-4a38407110a8"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "Main Schematic"
         (path "/7e8c9ffe-1b32-4326-ae61-8877b5395b8a/85ab1145-05e5-48dc-b931-575008e2a664"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
       (project "SENSOR"
         (path "/f5932ef5-369f-4014-aabe-82813000505a"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -1151,7 +1151,7 @@
   (symbol (lib_id "Device:R") (at 62.4332 109.5756 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b5fdb4b5-eaaf-4c8b-822a-39ceca474fe9)
-    (property "Reference" "R7" (at 64.77 108.9406 0)
+    (property "Reference" "R6" (at 64.77 108.9406 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 64.77 111.4806 0)
@@ -1168,12 +1168,12 @@
     (instances
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
-          (reference "R7") (unit 1)
+          (reference "R6") (unit 1)
         )
       )
       (project "sensing"
         (path "/ae78189d-79c7-41a0-b77c-3bb766898352"
-          (reference "R6") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
     )
@@ -1182,7 +1182,7 @@
   (symbol (lib_id "pspice:CAP") (at 104.3432 100.0506 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c632e5ae-eb37-4aab-87cf-40feb68fb05e)
-    (property "Reference" "C9" (at 104.3432 92.71 90)
+    (property "Reference" "C6" (at 104.3432 92.71 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0.1uF" (at 104.3432 95.25 90)
@@ -1199,12 +1199,12 @@
     (instances
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
-          (reference "C9") (unit 1)
+          (reference "C6") (unit 1)
         )
       )
       (project "sensing"
         (path "/ae78189d-79c7-41a0-b77c-3bb766898352"
-          (reference "C6") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
     )
@@ -1213,7 +1213,7 @@
   (symbol (lib_id "power:GND") (at 85.2932 134.3406 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d40ce5b9-b8e8-4df5-a62d-0b9e0aa49790)
-    (property "Reference" "#PWR09" (at 85.2932 140.6906 0)
+    (property "Reference" "#PWR013" (at 85.2932 140.6906 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 85.2932 139.4206 0)
@@ -1229,12 +1229,12 @@
     (instances
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR013") (unit 1)
         )
       )
       (project "sensing"
         (path "/ae78189d-79c7-41a0-b77c-3bb766898352"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -1243,7 +1243,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 82.1182 120.3706 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ee1fdf39-11f1-4cf6-90b0-2d76525cf189)
-    (property "Reference" "TP3" (at 82.7532 119.1006 0)
+    (property "Reference" "TP4" (at 82.7532 119.1006 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SDA1" (at 80.8482 121.6406 0)
@@ -1259,12 +1259,12 @@
     (instances
       (project "Main Schematic"
         (path "/81c41bad-bb43-41af-b405-18d135a809b1/820a1ce6-42c1-4792-8ad0-5e2a5c074ed4"
-          (reference "TP3") (unit 1)
+          (reference "TP4") (unit 1)
         )
       )
       (project "sensing"
         (path "/ae78189d-79c7-41a0-b77c-3bb766898352"
-          (reference "TP6") (unit 1)
+          (reference "TP?") (unit 1)
         )
       )
     )
