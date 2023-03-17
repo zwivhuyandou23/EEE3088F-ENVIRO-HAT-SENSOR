@@ -887,7 +887,7 @@
     (property "Value" "10k" (at 166.116 105.8164 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 162.4076 103.9114 90)
+    (property "Footprint" "R5K:RESC2012X60N" (at 162.4076 103.9114 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 164.1856 103.9114 0)
