@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "M24C16-RMN6TP"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2019-07-05-05:58:31)
+    (mountForm default
+        (footprintRef "SOIC127P600X175-8N")
+        (spec "System")
+    )
+)

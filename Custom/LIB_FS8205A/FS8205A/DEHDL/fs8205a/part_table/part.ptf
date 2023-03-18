@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'FS8205A'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Fortune Semiconductor Corporation", "FS8205A" (!) = "", "SOP65P640X120-8N", "Small Outline Packages", "", "", "", "", "Dual N-Channel Enahncement Mode Power MOSFET", "http://www.ic-fortune.com/upload/Download/FS8205A-DS-12_EN.pdf", "1.2 mm"
+END_PART
+
+END.

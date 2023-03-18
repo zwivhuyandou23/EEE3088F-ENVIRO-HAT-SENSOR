@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'M24C16_RMN6TP'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "STMicroelectronics", "M24C16-RMN6TP" (!) = "", "SOIC127P600X175-8N", "Small Outline Packages", "511-M24C16-RMN6TP", "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/M24C16-RMN6TP?qs=%252B9pWl1iD4MU2Vux9rOFCEg%3D%3D", "M24C16-RMN6TP, Serial EEPROM Memory 16kbit, Serial-I2C, 900ns, 1.8V, 8-Pin SOIC", "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00061111.pdf", "1.75 mm"
+END_PART
+
+END.

@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'DW01A_G'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Fortune Semiconductor Corporation", "DW01A-G" (!) = "", "SOT95P280X135-6N", "SOT23 (6-Pin)", "", "", "", "", "One Cell Lithium-ion/Polymer Battery Protection IC", "http://acoptex.com/uploads/DW01A.pdf", "1.35 mm"
+END_PART
+
+END.

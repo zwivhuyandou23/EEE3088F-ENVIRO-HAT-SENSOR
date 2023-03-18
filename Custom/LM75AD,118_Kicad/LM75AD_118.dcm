@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LM75AD,118
+D Board Mount Temperature Sensors I2C LOCAL +/- 2OC TS
+K
+F http://www.nxp.com/docs/en/data-sheet/LM75A.pdf
+$ENDCMP
+#
+#End Doc Library
