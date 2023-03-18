@@ -352,7 +352,6 @@
     )
   )
 
-
   (junction (at 191.77 57.15) (diameter 0) (color 0 0 0 0)
     (uuid 06764c94-6dfb-49e1-b7f4-cfcd19246db4)
   )
@@ -748,7 +747,7 @@
     (property "Value" "100nF" (at 104.14 36.83 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "100NF_C:CAPC1005X55N" (at 107.95 40.9448 0)
+    (property "Footprint" "A_New_folder:C1206" (at 107.95 40.9448 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 104.14 41.91 0)
