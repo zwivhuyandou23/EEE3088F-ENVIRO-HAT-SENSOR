@@ -352,7 +352,6 @@
     )
   )
 
-
   (junction (at 191.77 57.15) (diameter 0) (color 0 0 0 0)
     (uuid 06764c94-6dfb-49e1-b7f4-cfcd19246db4)
   )
@@ -648,7 +647,7 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 268ea7f7-ba84-4680-ae57-c6ef3a013b53)
   )
-  (hierarchical_label "SDA" (shape input) (at 234.95 67.31 0) (fields_autoplaced)
+  (hierarchical_label "SDL" (shape input) (at 234.95 67.31 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 466d9450-f993-48bc-b5a9-a14600a5d585)
   )
@@ -883,7 +882,7 @@
     (property "Reference" "TP11" (at 240.03 63.4999 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Value" "SDA" (at 240.03 65.405 90)
+    (property "Value" "SDL" (at 240.03 65.405 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm" (at 234.95 69.85 0)

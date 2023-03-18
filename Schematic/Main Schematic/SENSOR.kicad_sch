@@ -350,7 +350,6 @@
     )
   )
 
-
   (junction (at 164.1856 111.379) (diameter 0) (color 0 0 0 0)
     (uuid 0c6c5ff4-a80f-46e9-bd8d-4e63fd5d9983)
   )
@@ -579,7 +578,7 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 7265ab5a-8294-4df0-a754-709fd9f4570a)
   )
-  (hierarchical_label "SDA" (shape input) (at 78.9432 115.8494 180) (fields_autoplaced)
+  (hierarchical_label "SDL" (shape input) (at 78.9432 115.8494 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 84aa9ec9-fd9b-42bf-a46d-516c167e7bf1)
   )

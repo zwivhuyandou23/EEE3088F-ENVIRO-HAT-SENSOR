@@ -1129,7 +1129,6 @@
   )
 
 
-
   (wire (pts (xy 234.188 46.1772) (xy 239.268 46.1772))
     (stroke (width 0) (type default))
     (uuid 01f04141-829e-4b5c-a738-307331ce2a74)
@@ -1421,7 +1420,7 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (label "SDA" (at 77.8256 109.1184 0) (fields_autoplaced)
+  (label "SDL" (at 77.8256 109.1184 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 0da083a4-e5dc-47f8-af4d-500705b074a1)
   )
@@ -1810,7 +1809,7 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (label "SDA" (at 133.7564 73.7616 0) (fields_autoplaced)
+  (label "SDL" (at 133.7564 73.7616 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 9b7da5a8-6693-4daf-8455-0d5c5dd008ce)
   )
@@ -2698,7 +2697,7 @@
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid b118c2d0-ceba-4620-b8a5-299f14c409ec)
     )
-    (pin "SDA" input (at 77.8256 109.1184 0)
+    (pin "SDL" input (at 77.8256 109.1184 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 1aa6a4c6-3de8-42a4-8efb-fbecdb79bc87)
     )
@@ -2727,7 +2726,7 @@
     (property "Sheetfile" "MCU.kicad_sch" (at 93.218 97.257 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
-    (pin "SDA" input (at 133.7564 73.7616 0)
+    (pin "SDL" input (at 133.7564 73.7616 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 6fc54de3-ffd1-4de5-87d6-018c473587f9)
     )
