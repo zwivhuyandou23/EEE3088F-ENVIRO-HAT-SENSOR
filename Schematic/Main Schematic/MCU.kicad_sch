@@ -581,11 +581,6 @@
     (uuid ffd32301-23b0-4696-bcb9-d30712da658c)
   )
 
-  (text "TO-DO\n- Female headers should be inside MCU\n- UART Tx - Rx and Rx to Tx\n- Add Pull-up Resistors to SCL & SDA\n- Vcc connects to power not GND\n"
-    (at 31.75 127 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 5736f1fd-cf78-4ce7-a1f0-7268bf55c0ba)
-  )
   (text "TEAM 26\nSIVUYILE NOSE\nMODULE INTERFACES WITH SENSOR AND POWER MODULES\nUCT\n"
     (at 177.8 175.26 0)
     (effects (font (size 1.27 1.27) (color 140 0 0 1)) (justify left bottom))
