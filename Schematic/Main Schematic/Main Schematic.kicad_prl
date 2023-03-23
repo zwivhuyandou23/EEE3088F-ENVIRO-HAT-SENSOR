@@ -18,7 +18,7 @@
       "dimensions": true,
       "footprints": true,
       "graphics": true,
-      "keepouts": true,
+      "keepouts": false,
       "lockedItems": false,
       "otherItems": true,
       "pads": true,
@@ -65,7 +65,7 @@
       40
     ],
     "visible_layers": "ffdffff_ffffffff",
-    "zone_display_mode": 0
+    "zone_display_mode": 1
   },
   "meta": {
     "filename": "Main Schematic.kicad_prl",
