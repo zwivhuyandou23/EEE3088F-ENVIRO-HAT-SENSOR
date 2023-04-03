@@ -1,4 +1,4 @@
-""Reference"",""Value"",""Footprint"",""Price"",""Part #"",""Qty""
+Reference,""Value"",""Footprint"",""Price"",""Part #"",""Qty""
 ""C2"",""10u"",""Capacitor_SMD:C_0402_1005Metric"",""00"",""C15525"",""1""
 ""C2"",""10u"",""Capacitor_SMD:C_0402_1005Metric"",""00"",""C15525"",""1""
 ""C3"",""4.7uF"",""Capacitor_SMD:C_0201_0603Metric"",""00"",""C335103"",""1""
