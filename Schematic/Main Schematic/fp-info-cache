@@ -1,158 +1,4 @@
-21496857058993228
-A_New_folder
-18650_Holder_SMD
-
-
-0
-5
-2
-A_New_folder
-BAT-SMD_MY-18650-02
-BAT-SMD_MY-18650-02 footprint
-BAT-SMD_MY-18650-02 footprint
-0
-2
-2
-A_New_folder
-C0402
-C0402 footprint
-C0402 footprint
-0
-2
-2
-A_New_folder
-C1206
-C1206 footprint
-C1206 footprint
-0
-2
-2
-A_New_folder
-LED0805-RD
-LED0805-RD footprint
-LED0805-RD footprint
-0
-2
-2
-A_New_folder
-MICRO-USB-SMD_MICROXNJ
-MICRO-USB-SMD_MICROXNJ footprint
-MICRO-USB-SMD_MICROXNJ footprint
-0
-9
-9
-A_New_folder
-R0402
-R0402 footprint
-R0402 footprint
-0
-2
-2
-A_New_folder
-R0603
-R0603 footprint
-R0603 footprint
-0
-2
-2
-A_New_folder
-R1206
-R1206 footprint
-R1206 footprint
-0
-2
-2
-A_New_folder
-RES-TH_L5.1-W4.3-P3.40-D0.5
-RES-TH_L5.1-W4.3-P3.40-D0.5 footprint
-RES-TH_L5.1-W4.3-P3.40-D0.5 footprint
-0
-2
-2
-A_New_folder
-SOD-523_L1.2-W0.8-LS1.6-RD
-SOD-523_L1.2-W0.8-LS1.6-RD footprint
-SOD-523_L1.2-W0.8-LS1.6-RD footprint
-0
-2
-2
-A_New_folder
-SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL
-SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL footprint
-SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL footprint
-0
-8
-8
-A_New_folder
-SOIC-8_L5.0-W4.0-P1.27-LS6.0-BL
-SOIC-8_L5.0-W4.0-P1.27-LS6.0-BL footprint
-SOIC-8_L5.0-W4.0-P1.27-LS6.0-BL footprint
-0
-8
-8
-A_New_folder
-SOIC127P600X175-8N
-SO8(1.75)
-Integrated Circuit
-0
-8
-8
-A_New_folder
-SOIC127P600X180-16N
-
-
-0
-16
-16
-A_New_folder
-SOP-16_L10.0-W3.9-P1.27-LS6.0-BL
-SOP-16_L10.0-W3.9-P1.27-LS6.0-BL footprint
-SOP-16_L10.0-W3.9-P1.27-LS6.0-BL footprint
-0
-16
-16
-A_New_folder
-SOP65P640X120-8N
-FS8205A
-MOSFET (N-Channel)
-0
-8
-8
-A_New_folder
-SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BR
-SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BR footprint
-SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BR footprint
-0
-6
-6
-A_New_folder
-SOT-89-3_L4.5-W2.5-P1.50-LS4.2-BR
-SOT-89-3_L4.5-W2.5-P1.50-LS4.2-BR footprint
-SOT-89-3_L4.5-W2.5-P1.50-LS4.2-BR footprint
-0
-3
-3
-A_New_folder
-SOT95P280X135-6N
-DW01A-G
-Integrated Circuit
-0
-6
-6
-A_New_folder
-TSSOP-8_L4.4-W3.0-P0.65-LS6.4-BL-2
-TSSOP-8_L4.4-W3.0-P0.65-LS6.4-BL-2 footprint
-TSSOP-8_L4.4-W3.0-P0.65-LS6.4-BL-2 footprint
-0
-8
-8
-A_New_folder
-USB_Conn_JLC_LCSC_C404969
-
-
-0
-15
-6
+21488461620207426
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -2547,13 +2393,6 @@ speaker CUI
 0
 2
 2
-CH340C
-SOIC127P600X180-16N
-
-
-0
-16
-16
 Calibration_Scale
 Gauge_10mm_Type1_CopperTop
 Gauge, Massstab, 10mm, CopperTop, Type 1,
@@ -51505,13 +51344,6 @@ SMD SMT ceramic resonator filter filter hand-soldering
 0
 3
 3
-DW01A_G
-SOT95P280X135-6N
-DW01A-G
-Integrated Circuit
-0
-6
-6
 Diode_SMD
 D_0201_0603Metric
 Diode SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator
@@ -53458,13 +53290,6 @@ One digit LED 7 segment SA39-11 SC39-11 SA39-12 SC39-12
 0
 10
 10
-FS8205A
-SOP65P640X120-8N
-FS8205A
-MOSFET (N-Channel)
-0
-8
-8
 Ferrite_THT
 LairdTech_28C0236-0JW-10
 Ferrite, vertical, LairdTech 28C0236-0JW-10, https://assets.lairdtech.com/home/brandworld/files/28C0236-0JW-10.pdf, JW Miller core https://www.bourns.com/products/magnetic-products/j.w.-miller-through-hole-ferrite-beads-emi-filters
@@ -60556,20 +60381,160 @@ Yellow 5381 Series LED
 0
 2
 2
-LM75AD
+Local_Footprints
+18650_Holder_SMD
+
+
+0
+5
+2
+Local_Footprints
+BAT-SMD_MY-18650-02
+BAT-SMD_MY-18650-02 footprint
+BAT-SMD_MY-18650-02 footprint
+0
+2
+2
+Local_Footprints
+C0402
+C0402 footprint
+C0402 footprint
+0
+2
+2
+Local_Footprints
+C1206
+C1206 footprint
+C1206 footprint
+0
+2
+2
+Local_Footprints
+LED0805-RD
+LED0805-RD footprint
+LED0805-RD footprint
+0
+2
+2
+Local_Footprints
+MICRO-USB-SMD_MICROXNJ
+MICRO-USB-SMD_MICROXNJ footprint
+MICRO-USB-SMD_MICROXNJ footprint
+0
+9
+9
+Local_Footprints
+R0402
+R0402 footprint
+R0402 footprint
+0
+2
+2
+Local_Footprints
+R0603
+R0603 footprint
+R0603 footprint
+0
+2
+2
+Local_Footprints
+R1206
+R1206 footprint
+R1206 footprint
+0
+2
+2
+Local_Footprints
+RES-TH_L5.1-W4.3-P3.40-D0.5
+RES-TH_L5.1-W4.3-P3.40-D0.5 footprint
+RES-TH_L5.1-W4.3-P3.40-D0.5 footprint
+0
+2
+2
+Local_Footprints
+SOD-523_L1.2-W0.8-LS1.6-RD
+SOD-523_L1.2-W0.8-LS1.6-RD footprint
+SOD-523_L1.2-W0.8-LS1.6-RD footprint
+0
+2
+2
+Local_Footprints
+SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL
+SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL footprint
+SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL footprint
+0
+8
+8
+Local_Footprints
+SOIC-8_L5.0-W4.0-P1.27-LS6.0-BL
+SOIC-8_L5.0-W4.0-P1.27-LS6.0-BL footprint
+SOIC-8_L5.0-W4.0-P1.27-LS6.0-BL footprint
+0
+8
+8
+Local_Footprints
 SOIC127P600X175-8N
 SO8(1.75)
 Integrated Circuit
 0
 8
 8
-M24C16-RMN6TP
-SOIC127P600X175-8N
-M24C16-RMN6TP
-Integrated Circuit
+Local_Footprints
+SOIC127P600X180-16N
+
+
+0
+16
+16
+Local_Footprints
+SOP-16_L10.0-W3.9-P1.27-LS6.0-BL
+SOP-16_L10.0-W3.9-P1.27-LS6.0-BL footprint
+SOP-16_L10.0-W3.9-P1.27-LS6.0-BL footprint
+0
+16
+16
+Local_Footprints
+SOP65P640X120-8N
+FS8205A
+MOSFET (N-Channel)
 0
 8
 8
+Local_Footprints
+SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BR
+SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BR footprint
+SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BR footprint
+0
+6
+6
+Local_Footprints
+SOT-89-3_L4.5-W2.5-P1.50-LS4.2-BR
+SOT-89-3_L4.5-W2.5-P1.50-LS4.2-BR footprint
+SOT-89-3_L4.5-W2.5-P1.50-LS4.2-BR footprint
+0
+3
+3
+Local_Footprints
+SOT95P280X135-6N
+DW01A-G
+Integrated Circuit
+0
+6
+6
+Local_Footprints
+TSSOP-8_L4.4-W3.0-P0.65-LS6.4-BL-2
+TSSOP-8_L4.4-W3.0-P0.65-LS6.4-BL-2 footprint
+TSSOP-8_L4.4-W3.0-P0.65-LS6.4-BL-2 footprint
+0
+8
+8
+Local_Footprints
+USB_Conn_JLC_LCSC_C404969
+
+
+0
+15
+6
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
@@ -83068,6 +83033,13 @@ LEM Hall Effect Voltage transducer
 0
 5
 5
+SilkSreen
+Group_QR
+
+
+0
+0
+0
 Socket
 3M_Textool_240-1288-00-0602J_2x20_P2.54mm
 3M 40-pin zero insertion force socket, though-hole, row spacing 25.4 mm (1000 mils)
@@ -83173,13 +83145,6 @@ https://www.farnell.com/cad/316865.pdf?_ga=2.37208032.177107060.1530611323-24901
 0
 48
 48
-Switch
-SW
-
-
-0
-3
-3
 Symbol
 CE-Logo_8.5x6mm_SilkScreen
 CE marking
