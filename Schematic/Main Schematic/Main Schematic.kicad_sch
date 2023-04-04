@@ -2199,7 +2199,7 @@
     (property "Value" "10k" (at 270.51 48.3362 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 266.192 46.4312 90)
+    (property "Footprint" "Local_Footprints:R0805" (at 266.192 46.4312 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 267.97 46.4312 0)
