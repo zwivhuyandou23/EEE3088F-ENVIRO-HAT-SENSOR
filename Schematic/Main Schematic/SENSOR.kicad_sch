@@ -821,7 +821,7 @@
     (property "Value" "10k" (at 166.2684 105.6386 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Local_Footprints:R0805" (at 162.306 103.7336 90)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 162.306 103.7336 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 164.084 103.7336 0)

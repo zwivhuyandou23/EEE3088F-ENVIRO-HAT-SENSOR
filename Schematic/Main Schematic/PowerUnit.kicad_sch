@@ -2366,7 +2366,7 @@
     (property "Value" "MCP1700x-330xxTT" (at 71.12 144.7292 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 71.12 142.875 0)
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-3" (at 71.12 142.875 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf" (at 71.12 148.59 0)
