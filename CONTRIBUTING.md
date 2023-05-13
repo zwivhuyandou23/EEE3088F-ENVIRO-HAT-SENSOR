@@ -27,38 +27,40 @@ git push origin my-branch
 
 ## Contribution Guidelines
 
-- Before starting any work, check the repository's issues and pull requests to see if the changes you want to make are already being discussed or worked on.
-- If you're working on a new feature or substantial change, it's a good idea to discuss it with the maintainers first to ensure it aligns with the project's goals.
-- Follow the coding style and conventions used in the project.
-- Write clear and concise commit messages and PR descriptions.
-- Include tests if applicable, and make sure the existing tests pass.
-- Be open to feedback and be responsive to any comments or suggestions from the maintainers or other contributors.
-- Help review and respond to open pull requests if you have the expertise and time.
+We welcome contributions from all developers to enhance the ENVIRO-SENSING-HAT project. To ensure a smooth collaboration, please follow these guidelines:
+
+**Discussion** : Before starting any work, check the repository's issues and pull requests to see if the changes you want to make are already being discussed or worked on. Feel free to communicate with the maintainers to align your contributions with the project's goals.
+
+**Coding Style**: Follow the established coding style and conventions used in the project to maintain consistency.
+
+**Clear Communication**: Write clear and concise commit messages and pull request descriptions, explaining the purpose and impact of your changes. Be open to feedback and actively engage in discussions.
+
+**Testing**: Include relevant tests if applicable, and ensure that the existing tests pass after making your changes.
+
+**Reporting Issues**: If you find something wrong or broken, please raise an issue on GitHub to report it. Provide a clear description of the problem and steps to reproduce it, if applicable.
+
+**Extending/Enhancing**: When extending the code, improving the PCB design, or enhancing the repository, please adhere to the established code style guides, utilize recommended image creation tools, compilers, specific libraries, and any other relevant tools mentioned in the project's documentation.
 
 ## Licensing
 
 This project is dual-licensed under the MIT License and CC-BY (Creative Commons Attribution).
 
-### MIT License
+## MIT License
+The code in this repository is licensed under the MIT License. You can find a copy of the license in the LICENSE file.
 
-The code in this repository is licensed under the MIT License. You can find a copy of the license in the [LICENSE](LICENSE.md) file.
-
-### CC-BY (Creative Commons Attribution)
-
-The non-code assets, such as documentation, images, and media files, are licensed under CC-BY (Creative Commons Attribution). This means you are free to use, share, and adapt the non-code assets, as long as you provide appropriate attribution.
+## CC-BY (Creative Commons Attribution)
+The non-code assets, such as documentation, images, and media files, are licensed under CC-BY (Creative Commons Attribution). You are free to use, share, and adapt the non-code assets, provided that you give appropriate attribution.
 
 ## Contributors Agreement
 
-By submitting a pull request or contributing in any form to this project, you agree to allow your contributions to be dual-licensed under both the MIT License and CC-BY (Creative Commons Attribution).
+By submitting a pull request or contributing in any form to this project, you agree to dual-license your contributions under both the MIT License and CC-BY (Creative Commons Attribution). Ensure that your contributions are compatible with both licenses.
 
-Please make sure that any contributions you make are compatible with both licenses.
-
-If you have any questions or concerns about the licensing, please contact project owners.
+If you have any questions or concerns regarding the licensing, please reach out to the project owners.
 
 ## Getting Help
 
-If you have any questions, concerns, or need further assistance, feel free to [open an issue](https://github.com/zwivhuyandou23/EEE3088F_ENVIRO-HAT-SENSOR/issues/new) or contact [maintainer's email or contact information].
+If you have any questions, concerns, or need further assistance, feel free to open an issue or contact the maintainers.
 
-Thank you for your interest in contributing to Testing! We appreciate your support and effort in making this project better.
+Thank you for your interest in contributing to the ENVIRO-SENSING-HAT project! We appreciate your support and effort in making this project even better.
 
 Happy contributing!
