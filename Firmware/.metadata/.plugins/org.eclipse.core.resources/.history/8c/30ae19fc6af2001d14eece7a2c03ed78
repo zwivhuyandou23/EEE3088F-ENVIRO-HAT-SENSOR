@@ -1,0 +1,67 @@
+#include "stm32f0xx.h"
+#include "stdio.h"
+
+#define TCA0_3_3VATE_ADDRESS    0x48
+#define TCA0_3_3VATE_TEMP_REG   0x00
+
+void I2C_Init(void)
+{
+    // Enable GPIOF clock
+    RCC->AHBENR |= RCC_AHBENR_GPIOFEN;
+
+    // Configure PF8 (I2C1_SCL) as alternate function mode
+    GPIOF->MODER &= ~GPIO_MODER_MODER8;
+    GPIOF->MODER |= GPIO_MODER_MODER8_1;
+    GPIOF->OTYPER |= GPIO_OTYPER_OT_8;
+    GPIOF->OSPEEDR |= GPIO_OSPEEDER_OSPEEDR8;
+    GPIOF->PUPDR |= GPIO_PUPDR_PUPDR8_0;
+
+    // Configure PF7 (I2C1_SDA) as alternate function mode
+    GPIOF->MODER &= ~GPIO_MODER_MODER7;
+    GPIOF->MODER |= GPIO_MODER_MODER7_1;
+    GPIOF->OTYPER |= GPIO_OTYPER_OT_7;
+    GPIOF->OSPEEDR |= GPIO_OSPEEDER_OSPEEDR7;
+    GPIOF->PUPDR |= GPIO_PUPDR_PUPDR7_0;
+
+    // Enable I2C1 clock
+    RCC->APB1ENR |= RCC_APB1ENR_I2C1EN;
+
+    // Configure I2C1
+    I2C1->CR1 = 0;
+    I2C1->CR2 = 0;
+    I2C1->TIMINGR = 0x2000090E; // Use default timing (100kHz)
+    I2C1->CR1 |= I2C_CR1_PE;
+}
+
+float TCA0_3_3VATE_ReadTemperature(void)
+{
+    uint8_t temp_data[2];
+    int16_t temp_raw;
+    float temperature;
+
+    // Start the I2C transmission
+    I2C1->CR2 = (TCA0_3_3VATE_ADDRESS << 1) | I2C_CR2_START;
+    while (!(I2C1->ISR & I2C_ISR_TXIS));
+
+    // Send the temperature register address
+    I2C1->TXDR = TCA0_3_3VATE_TEMP_REG;
+    while (!(I2C1->ISR & I2C_ISR_TC));
+
+    // Restart the I2C transmission
+    I2C1->CR2 = (TCA0_3_3VATE_ADDRESS << 1) | I2C_CR2_START;
+    while (!(I2C1->ISR & I2C_ISR_TXIS));
+
+    // Receive temperature data
+    I2C1->CR2 |= I2C_CR2_RD_WRN;
+    I2C1->CR2 |= I2C_CR2_STOP;
+
+    // Wait for data reception
+    while (!(I2C1->ISR & I2C_ISR_RXNE));
+
+    // Read temperature data
+    temp_data[0] = I2C1->RXDR;
+    while (!(I2C1->ISR & I2C_ISR_RXNE));
+    temp_data[1] = I2C1->RXDR;
+
+    // Convert raw temperature data to degrees Celsius
+    temp_raw = (temp_data[0] << 8) | temp_data

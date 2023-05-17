@@ -1,0 +1,10 @@
+21:50:25 **** Incremental Build of configuration Debug for project LDR_Headers ****
+make -j4 all 
+arm-none-eabi-size   LDR_Headers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3800	     20	   1572	   5392	   1510	LDR_Headers.elf
+Finished building: default.size.stdout
+ 
+
+21:50:26 Build Finished. 0 errors, 0 warnings. (took 1s.240ms)
+

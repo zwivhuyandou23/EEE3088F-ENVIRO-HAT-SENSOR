@@ -1,0 +1,88 @@
+#include "stm32f0xx.h"
+#include "stm32f0xx_hal.h"
+#include "stdio.h"
+
+#define TCA0_3_3VATE_ADDRESS    0x48
+#define TCA0_3_3VATE_TEMP_REG   0x00
+
+I2C_HandleTypeDef hi2c;
+
+void I2C_Init(void)
+{
+    GPIO_InitTypeDef GPIO_InitStruct = {0};
+
+    // Enable the GPIO clock for I2C SCL and SDA pins
+    __HAL_RCC_GPIOF_CLK_ENABLE();
+
+    // Configure I2C SCL pin (PF8)
+    GPIO_InitStruct.Pin = GPIO_PIN_8;
+    GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
+    GPIO_InitStruct.Pull = GPIO_PULLUP;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+    GPIO_InitStruct.Alternate = GPIO_AF1_I2C1;
+    HAL_GPIO_Init(GPIOF, &GPIO_InitStruct);
+
+    // Configure I2C SDA pin (PF7)
+    GPIO_InitStruct.Pin = GPIO_PIN_7;
+    GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
+    GPIO_InitStruct.Pull = GPIO_PULLUP;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+    GPIO_InitStruct.Alternate = GPIO_AF1_I2C1;
+    HAL_GPIO_Init(GPIOF, &GPIO_InitStruct);
+
+    // Enable the I2C peripheral clock
+    __HAL_RCC_I2C1_CLK_ENABLE();
+
+    // Configure the I2C peripheral
+    hi2c.Instance = I2C1;
+    hi2c.Init.Timing = 0x2000090E; // Use default timing (100kHz)
+    hi2c.Init.OwnAddress1 = 0;
+    hi2c.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+    hi2c.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+    hi2c.Init.OwnAddress2 = 0;
+    hi2c.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+    hi2c.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+    HAL_I2C_Init(&hi2c);
+}
+
+float TCA0_3_3VATE_ReadTemperature(void)
+{
+    uint8_t temp_data[2];
+    int16_t temp_raw;
+    float temperature;
+
+    // Read temperature from TCA0_3_3VATE
+    if (HAL_I2C_Master_Receive(&hi2c, TCA0_3_3VATE_ADDRESS << 1, temp_data, 2, HAL_MAX_DELAY) != HAL_OK)
+    {
+        // Error occurred while reading temperature
+        return -1.0f;
+    }
+
+    // Convert raw temperature data to degrees Celsius
+    temp_raw = (temp_data[0] << 8) | temp_data[1];
+    temperature = (float)temp_raw / 256.0f;
+
+    return temperature;
+}
+
+int main(void)
+{
+    char buffer[20];
+
+    // Initialize the HAL library
+    HAL_Init();
+
+    // Initialize the I2C peripheral and GPIO pins
+    I2C_Init();
+
+    // Infinite loop
+    while (1)
+    {
+        // Read temperature from TCA0_3_3VATE
+        float temperature = TCA0_3_3VATE_ReadTemperature();
+
+        // Print temperature to the screen
+        sprintf(buffer, "Temperature: %.2f C", temperature);
+        // (Code to write buffer to the screen)
+
+        // Delay

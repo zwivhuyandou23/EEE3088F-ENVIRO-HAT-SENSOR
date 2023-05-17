@@ -1,0 +1,9 @@
+adcValue
+madd
+Data
+sData
+Result
+rData
+EEPROM_DEVICE_ADDR
+I2CReturn
+str[60]

@@ -1,0 +1,219 @@
+//********************************************************************
+//*                    EEE2046F C template                           *
+//*==================================================================*
+//* WRITTEN BY:    Zwivhuya Ndou	                 		                         *
+//* DATE CREATED:	2 MAY 2023                                                    *
+//* MODIFIED:    3 May 2023                                                    *
+//*==================================================================*
+//* PROGRAMMED IN: STM32CUBEIDE Studio                               *
+//* TARGET:        STM32F0                                           *
+//*==================================================================*
+//* DESCRIPTION:                                                     *
+//*                                                                  *
+//********************************************************************
+// INCLUDE FILES
+//====================================================================
+#include "stm32f0xx.h"
+#include <stdio.h>
+
+//====================================================================
+// GLOBAL CONSTANTS
+//====================================================================
+#define DELAY1 800
+#define DELAY2 800
+#define TRUE 1
+#define FALSE 0
+#define SW0 GPIO_IDR_0
+#define SW1 GPIO_IDR_1
+#define SW2 GPIO_IDR_2
+#define SW3 GPIO_IDR_3
+//====================================================================
+// GLOBAL VARIABLES
+//====================================================================
+typedef uint8_t flag_t;
+uint16_t bitpattern1 = 0;
+uint16_t bitpattern2 = 255;
+uint16_t bitpattern3 = 170;
+flag_t startFlag = FALSE;
+flag_t firstFlag = FALSE;
+flag_t secondFlag = FALSE;
+flag_t thirdFlag = FALSE;
+//====================================================================
+// FUNCTION DECLARATIONS
+//====================================================================
+void initGPIO(void);
+void Delay(void);
+void firstDisplay(void);
+void secondDisplay(void);
+void thirdDisplay(void);
+void checkPB(void);
+void display(void);
+void start(void);
+//====================================================================
+// MAIN FUNCTION
+//====================================================================
+int main (void)
+{
+	initGPIO();
+
+
+	Delay();
+
+	while(1){
+		if((GPIOA->IDR & SW0)==0){ //checks if SW0 switch is on or not
+					start();
+				}
+		else if((GPIOA->IDR & SW1)==0){ //checks if SW1 switch is on or not
+					firstDisplay();
+				}
+		else if((GPIOA->IDR & SW2)==0){ //checks if SW2 switch is on or not
+			  		secondDisplay();
+				}
+		else if((GPIOA->IDR & SW3)==0){ //checks if SW3 switch is on or not
+				    thirdDisplay();
+		}
+	}
+
+
+}							// End of main
+
+//====================================================================
+// FUNCTION DEFINITIONS
+//====================================================================
+
+//This function initializes the GPIO ports and pins. It configures the GPIOA and GPIOB ports for input and output operations.
+void initGPIO(void){
+
+
+/*GPIOA Initialization*/
+	RCC -> AHBENR |= RCC_AHBENR_GPIOAEN;
+	GPIOA -> MODER &= ~(GPIO_MODER_MODER0 | GPIO_MODER_MODER1 | GPIO_MODER_MODER2 |GPIO_MODER_MODER3);
+	GPIOA->PUPDR |=  (GPIO_PUPDR_PUPDR0_0|GPIO_PUPDR_PUPDR1_0|GPIO_PUPDR_PUPDR2_0|GPIO_PUPDR_PUPDR3_0);
+
+	/*GPIOB Initialization*/
+	RCC -> AHBENR |= RCC_AHBENR_GPIOBEN;
+	GPIOB -> MODER |= (GPIO_MODER_MODER0_0 |GPIO_MODER_MODER1_0|GPIO_MODER_MODER2_0|GPIO_MODER_MODER3_0|GPIO_MODER_MODER4_0|GPIO_MODER_MODER5_0|GPIO_MODER_MODER6_0|GPIO_MODER_MODER7_0);
+	GPIOB-> ODR |= 0x0000;
+
+}
+//This function introduces a delay in the program execution by looping through nested for loops. The length of the delay is determined by the values of DELAY1 and DELAY2.
+void Delay(void){
+	int i,j;
+	for(i=0;i<=DELAY1;i++)
+		for(j=0;j<=DELAY2;j++);
+}
+//This function displays a specific pattern on the GPIOB pins. It sets the GPIOB output pins according to the bitpattern1, bitpattern2, and bitpattern3 variables, and then clears the pins.
+void firstDisplay(void){
+
+
+		for(;;){
+
+
+		GPIOB-> ODR |= bitpattern1;
+
+		Delay();
+		GPIOB-> ODR |= bitpattern2;
+
+	    Delay();
+		GPIOB -> ODR &= bitpattern3;
+
+		Delay();
+	    GPIOB-> ODR &= 0x0000;
+		}
+
+
+}
+//displays second display patterns
+void secondDisplay(void){
+			//displays second display patterns
+			  for(;;){
+
+		      GPIOB-> ODR |= 0x0001;
+		  	  Delay();
+		  	  GPIOB-> ODR &= 0x0000;
+
+		      GPIOB-> ODR |= 0x0002;
+		  	  Delay();
+		  	  GPIOB-> ODR &= 0x0000;
+
+
+		      GPIOB-> ODR |= 0x0004;
+		  	  Delay();
+		  	  GPIOB-> ODR &= 0x0000;
+
+
+		      GPIOB-> ODR |= 0x0008;
+		  	  Delay();
+		  	  GPIOB-> ODR &= 0x0000;
+
+		      GPIOB-> ODR |= 0x0010;
+		  	  Delay();
+		  	  GPIOB-> ODR &= 0x0000;
+
+		      GPIOB-> ODR |= 0x0020;
+		  	  Delay();;
+		  	  GPIOB-> ODR &= 0x0000;
+
+		      GPIOB-> ODR |= 0x0040;
+		  	  Delay();
+		  	  GPIOB-> ODR &= 0x0000;
+
+
+		      GPIOB-> ODR |= 0x0080;
+		  	  Delay();
+		  	  GPIOB-> ODR &= 0x0000;
+			  }
+
+
+}
+//displays third display patterns
+void thirdDisplay(void){
+
+		for(int i = 0; i < 256; i++){ // iterate from bin 0 to bin 2^8
+;
+				  GPIOB-> ODR |= i;
+
+				  Delay();
+				  GPIOB-> ODR &= 0x0000;
+			}
+
+}
+
+void checkPB(void){
+
+	if((GPIOA->IDR & SW0)==0){
+		startFlag = TRUE;
+	}
+	if((GPIOA->IDR & SW1)==0){
+		firstFlag = TRUE;
+	}
+	if((GPIOA->IDR & SW2)==0){
+		secondFlag = TRUE;
+	}
+	if((GPIOA->IDR & SW3)==0){
+		thirdFlag = TRUE;
+	}
+}
+
+void start(void){
+	GPIOB-> ODR |= 0x0001;
+}
+void display(void){
+	if(startFlag == 1){
+		start();
+	}
+	if(startFlag == 1 && firstFlag == 1){
+		GPIOB-> ODR &= 0x0000;
+		firstDisplay();
+	}
+	if(startFlag == 1 && firstFlag == 1 && secondFlag == 1){
+		secondDisplay();
+	}
+	if(startFlag == 1 && firstFlag == 1 && secondFlag == 1 && thirdFlag == 1){
+		thirdDisplay();
+	}
+}
+
+//********************************************************************
+// END OF PROGRAM
+//********************************************************************

@@ -1,0 +1,37 @@
+21:35:18 **** Incremental Build of configuration Debug for project ADC_single_mode ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:197,
+                 from ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Core/Src/main.c: In function 'main':
+../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_gpio.h:89:36: warning: passing argument 1 of 'HAL_I2C_Mem_Write' makes pointer from integer without a cast [-Wint-conversion]
+   89 | #define GPIO_PIN_6                 ((uint16_t)0x0040U)  /* Pin 6 selected    */
+      |                                    ^~~~~~~~~~~~~~~~~~~
+      |                                    |
+      |                                    short unsigned int
+../Core/Src/main.c:141:39: note: in expansion of macro 'GPIO_PIN_6'
+  141 |         I2CReturn = HAL_I2C_Mem_Write(GPIO_PIN_6, EEPROM_DEVICE_ADDR, madd, 2, sData, 1, HAL_MAX_DELAY);
+      |                                       ^~~~~~~~~~
+In file included from ../Core/Inc/stm32f0xx_hal_conf.h:241,
+                 from ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_i2c.h:634:56: note: expected 'I2C_HandleTypeDef *' {aka 'struct __I2C_HandleTypeDef *'} but argument is of type 'short unsigned int'
+  634 | HAL_StatusTypeDef HAL_I2C_Mem_Write(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress,
+      |                                     ~~~~~~~~~~~~~~~~~~~^~~~
+arm-none-eabi-gcc -o "ADC_single_mode.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\Zwivh\OneDrive\Desktop\STM32\EEE3088F\ADC_single_mode\STM32F051C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC_single_mode.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ADC_single_mode.elf
+ 
+arm-none-eabi-size   ADC_single_mode.elf 
+arm-none-eabi-objdump -h -S  ADC_single_mode.elf  > "ADC_single_mode.list"
+   text	   data	    bss	    dec	    hex	filename
+  16560	    120	   1880	  18560	   4880	ADC_single_mode.elf
+Finished building: default.size.stdout
+ 
+Finished building: ADC_single_mode.list
+ 
+
+21:35:19 Build Finished. 0 errors, 1 warnings. (took 1s.112ms)
+

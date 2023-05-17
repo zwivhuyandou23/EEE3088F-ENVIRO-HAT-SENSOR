@@ -1,0 +1,21 @@
+19:28:35 **** Incremental Build of configuration Debug for project ADC_single_mode ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F051x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "ADC_single_mode.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\Zwivh\OneDrive\Desktop\STM32\EEE3088F\ADC_single_mode\STM32F051C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC_single_mode.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ADC_single_mode.elf
+ 
+arm-none-eabi-size   ADC_single_mode.elf 
+arm-none-eabi-objdump -h -S  ADC_single_mode.elf  > "ADC_single_mode.list"
+   text	   data	    bss	    dec	    hex	filename
+   7752	     20	   1636	   9408	   24c0	ADC_single_mode.elf
+Finished building: default.size.stdout
+ 
+Finished building: ADC_single_mode.list
+ 
+19:28:38 **** Incremental Build of configuration Debug for project ADC_single_mode ****
+make -j4 all 
+arm-none-eabi-size   ADC_single_mode.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7752	     20	   1636	   9408	   24c0	ADC_single_mode.elf
+Finished building: default.size.stdout
+ 
