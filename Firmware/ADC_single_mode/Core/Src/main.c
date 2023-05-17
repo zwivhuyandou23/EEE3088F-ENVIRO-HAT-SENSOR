@@ -64,6 +64,7 @@ static void MX_ADC_Init(void);
 /* USER CODE BEGIN 0 */
 
 uint32_t adcValue;
+uint8_t i, j, Loop = 0;
 //uint8_t *adcPointer = &adcValue;
 
 
@@ -113,7 +114,7 @@ int main(void)
   //MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
   // MX_I2C1_Init();
-   HAL_ADC_Start (&hadc);
+
 
   /* USER CODE END 2 */
 
@@ -124,7 +125,7 @@ int main(void)
 
   while (1)
   {
-
+	  HAL_ADC_Start (&hadc);
 
 
 	  		    /* USER CODE END WHILE */
@@ -132,7 +133,8 @@ int main(void)
 	  					 {
 
 	  					  	adcValue =  HAL_ADC_GetValue(&hadc);
-
+	  					  	i++;
+	  					  	j = j+2;
 
 	  					  	HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_0);
 
