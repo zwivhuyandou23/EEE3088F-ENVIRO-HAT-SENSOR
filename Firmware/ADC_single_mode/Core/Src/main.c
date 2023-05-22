@@ -69,7 +69,12 @@ static uint32_t check_for_eeprom_magic(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+<<<<<<< HEAD
 
+=======
+uint32_t adcValue;
+uint8_t i, j, Loop = 0;
+>>>>>>> 1e31e118fe8bf7d21dbed644b77001b693547427
 //uint8_t *adcPointer = &adcValue;
 
 
@@ -130,6 +135,7 @@ int main(void)
   MX_ADC_Init();
   //MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
+<<<<<<< HEAD
   
   uint32_t memo;
   memo =  check_for_eeprom_magic();
@@ -139,6 +145,9 @@ int main(void)
    init_usart();
    lcd_init(); // set up LCD lines and send initialisation commands
     lcd_command(LCD_CLEAR_DISPLAY);
+=======
+  // MX_I2C1_Init();
+>>>>>>> 1e31e118fe8bf7d21dbed644b77001b693547427
 
 
   /* USER CODE END 2 */
@@ -157,6 +166,7 @@ int main(void)
  uint8_t data[255] ;
   while (1)
   {
+<<<<<<< HEAD
 
 	// lcd_string("Zwivhuya Ndou");
 	          	   // go to lower line
@@ -178,14 +188,23 @@ int main(void)
 	        sprintf(strAdc, "ADC = %d", adcValue);
 
 	        lcd_two_line_write(strTemp, strAdc);
+=======
+	  HAL_ADC_Start (&hadc);
+>>>>>>> 1e31e118fe8bf7d21dbed644b77001b693547427
 
 
 	        }
 	  while(1)
 	  {
 
+<<<<<<< HEAD
 		    lcd_command(LCD_CLEAR_DISPLAY);
 
+=======
+	  					  	adcValue =  HAL_ADC_GetValue(&hadc);
+	  					  	i++;
+	  					  	j = j+2;
+>>>>>>> 1e31e118fe8bf7d21dbed644b77001b693547427
 
       //adcValueEEpromRead =10; test
 
