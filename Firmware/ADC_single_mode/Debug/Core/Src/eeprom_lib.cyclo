@@ -1,0 +1,4 @@
+eeprom_lib.c:33:6:eeprom_write_to_address	6
+eeprom_lib.c:66:9:eeprom_read_from_address	5
+eeprom_lib.c:90:6:eeprom_init_spi	1
+eeprom_lib.c:111:13:delay	2

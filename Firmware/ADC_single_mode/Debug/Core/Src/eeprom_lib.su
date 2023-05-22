@@ -1,0 +1,4 @@
+../Core/Src/eeprom_lib.c:33:6:eeprom_write_to_address	24	static
+../Core/Src/eeprom_lib.c:66:9:eeprom_read_from_address	32	static
+../Core/Src/eeprom_lib.c:90:6:eeprom_init_spi	8	static
+../Core/Src/eeprom_lib.c:111:13:delay	24	static,ignoring_inline_asm

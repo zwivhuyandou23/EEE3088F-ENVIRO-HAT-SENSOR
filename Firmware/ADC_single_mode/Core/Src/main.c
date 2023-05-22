@@ -24,6 +24,9 @@
 #include "string.h"
 #include "stm32f0xx_hal.h"
 #include <stdio.h>
+#include "eeprom_lib.h"
+#include "temp_sensor_lib.h"
+#include "lcd_stm32f0.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -34,6 +37,7 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 #define DELAY 250
+#define SW0 GPIO_IDR_0
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -44,7 +48,7 @@
 /* Private variables ---------------------------------------------------------*/
 ADC_HandleTypeDef hadc;
 
-//UART_HandleTypeDef huart1;
+UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
 
@@ -56,28 +60,41 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_ADC_Init(void);
 //static void MX_USART1_UART_Init(void);
-/* USER CODE BEGIN PFP */
 
+/* USER CODE BEGIN PFP */
+void init_usart(void);
+static uint32_t check_for_eeprom_magic(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-uint32_t adcValue;
+
 //uint8_t *adcPointer = &adcValue;
 
 
-/*	char str[60] = { 0 }; //Useful buffer for printing to UART
-  	uint8_t I2CReturn = 0; //Status var to indicate if HAL_I2C operation has succeeded (1) or failed (0);
-  	uint8_t i, j, Loop = 0; //Loop counters
-    //Setup variables for reading and writing
-    	uint16_t EEPROM_DEVICE_ADDR = 0b10100001; //Address of EEPROM device on I2C bus
-    	uint16_t madd = 0x00; //Memory address variable containing a starting memory address for a location of memory in the EEPROM
-    	uint8_t Data = 0x10;//Data variable containing sStarting value to write to memory, could be any 8bit value
-    	uint8_t *sData = &Data;	//Pointer to sending Data variable
-    	uint8_t Result = 0x00;	//Variable to stored value read back from memory in
-    	uint8_t *rData = &Result;	//Pointer to result data variable
-*/
+	char str[60] = { 0 }; //Useful buffer for printing to UART
+  	
+
+	uint16_t EEPROM_DEVICE_ADDR = 0;
+  //    uint16_t EEPROM_DEVICE_ADDR = 0b00001010; //Address of EEPROM device on SPI bus
+      //uint16_t EEPROM_DEVICE_ADDR = 0xDE;
+     // uint16_t EEPROM_DEVICE_ADDR = 0xAD;
+      //uint16_t EEPROM_DEVICE_ADDR = 0xBA;
+      //uint16_t EEPROM_DEVICE_ADDR = 0xBE;
+     // uint16_t EEPROM_DEVICE_ADDR = 0;
+    	uint8_t temperature  ; //run time variable containing temperature values; sStarting value to write to memory, could be any 8bit value
+    	
+      uint8_t adcValue;	//run time data for the ADC to be stored in the variable
+
+
+      uint8_t tempEEpromRead, adcValueEEpromRead ;
+
+      char strAdc[100];
+       char strTemp[100];
+       char strTempRead[100];
+	   char strAdcRead[100];
+
 
 /* USER CODE END 0 */
 
@@ -88,6 +105,7 @@ uint32_t adcValue;
 int main(void)
 {
   /* USER CODE BEGIN 1 */
+
 
   /* USER CODE END 1 */
 
@@ -112,41 +130,101 @@ int main(void)
   MX_ADC_Init();
   //MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-  // MX_I2C1_Init();
+  
+  uint32_t memo;
+  memo =  check_for_eeprom_magic();
    HAL_ADC_Start (&hadc);
+   temp_sensor_init_iic();
+   eeprom_init_spi();
+   init_usart();
+   lcd_init(); // set up LCD lines and send initialisation commands
+    lcd_command(LCD_CLEAR_DISPLAY);
+
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-    	//Say hello over UART
+    	
+
+
+
+        	  //eeprom_write_to_address(EEPROM_DEVICE_ADDR, temperature );
+      
     	//debugPrintln(&huart1, "Hello, this is STMF0 Discovery board: ");
 
+
+ uint8_t data[255] ;
   while (1)
   {
 
+	// lcd_string("Zwivhuya Ndou");
+	          	   // go to lower line
+
+	  uint8_t count;
+	  while((GPIOA->IDR & SW0)!=0){
+		  HAL_ADC_Start (&hadc);
+		  temperature  = temp_sensor_read();
+
+		  data[count] = temperature;
+		  adcValue =  HAL_ADC_GetValue(&hadc); //we are using a 512x8 eeprom
+	      	eeprom_write_to_address(EEPROM_DEVICE_ADDR, adcValue  );
+	      	eeprom_write_to_address(EEPROM_DEVICE_ADDR, temperature );
+	      	HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_3);
+	      	//count++;
+	        HAL_Delay(100);
+
+	        sprintf(strTemp, "temperature = %d", temperature);
+	        sprintf(strAdc, "ADC = %d", adcValue);
+
+	        lcd_two_line_write(strTemp, strAdc);
 
 
-	  		    /* USER CODE END WHILE */
-	  				if( HAL_ADC_PollForConversion(&hadc, 5)== HAL_OK)
-	  					 {
+	        }
+	  while(1)
+	  {
 
-	  					  	adcValue =  HAL_ADC_GetValue(&hadc);
+		    lcd_command(LCD_CLEAR_DISPLAY);
 
 
-	  					  	HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_0);
+      //adcValueEEpromRead =10; test
 
-	  					  			HAL_Delay(100);
-	  					}
+      tempEEpromRead = eeprom_read_from_address(EEPROM_DEVICE_ADDR);;;// eeprom_read_from_address(EEPROM_DEVICE_ADDR);
 
-	  		    /* USER CODE BEGIN 3 */
+      sprintf(strTempRead,  "temperature = %d", tempEEpromRead);
+
+
+		 	        lcd_two_line_write(strTempRead, strTempRead);
+
+
+
+		  	 HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_0);
+
+		  	 HAL_Delay(500);
+		  	GPIOB->ODR |= 0xAA;
+		  	 init_usart();
+
+		  	  }
+
+
+
+
+	  }
+	  exit(1);
+
+
+
+
+	       //lcd_string(str);
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
 }
-
 
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  			}
+
   /* USER CODE END 3 */
 
 
@@ -193,6 +271,49 @@ void SystemClock_Config(void)
     Error_Handler();
   }
 }
+
+
+static uint32_t check_for_eeprom_magic(void) {
+
+	uint8_t eeprom_magic[] = {0xDE, 0xAD, 0xBA, 0xBE};
+  lcd_two_line_write("Attemping to", "read from EEPROM");
+  uint32_t pos;
+  eeprom_init_spi();
+  for(pos = 0; pos < sizeof(eeprom_magic); pos++) {
+    if (eeprom_read_from_address(pos) != eeprom_magic[pos]) {
+      return 0;
+    }
+    eeprom_write_to_address(pos, 0x00); // erase the byte after verifying it
+  }
+  return 1;
+}
+void delay(void) {
+  volatile int i = 0;
+  for(; i < 565535; i++);
+}
+
+
+
+void init_usart(void) {
+  // clock to USART1
+  RCC->APB2ENR |= RCC_APB2ENR_USART1EN;
+  // clock to GPIOA
+  RCC->AHBENR |= RCC_AHBENR_GPIOAEN;
+  // PA9 and PA10 to AF
+  GPIOA->MODER |= GPIO_MODER_MODER9_1;
+  GPIOA->MODER |= GPIO_MODER_MODER10_1;
+  // remap to correct AF
+  GPIOA->AFR[1] |= (1 << (1*4)); // remap pin 9 to AF1
+  GPIOA->AFR[1] |= (1 << (2*4)); // remap pin 10 to AF1
+  // BRR = fclk / baud = fclk / 115200
+  SystemCoreClockUpdate();
+  USART1->BRR = SystemCoreClock/115200;
+  // enable with UE in CR1
+  USART1->CR1 |= USART_CR1_UE;
+  USART1->CR1 |= USART_CR1_RE;
+  USART1->CR1 |= USART_CR1_TE;
+}
+
 
 /**
   * @brief ADC Initialization Function
@@ -253,6 +374,41 @@ static void MX_ADC_Init(void)
   * @param None
   * @retval None
   */
+static void MX_USART1_UART_Init(void)
+{
+
+  /* USER CODE BEGIN USART1_Init 0 */
+
+  /* USER CODE END USART1_Init 0 */
+
+  /* USER CODE BEGIN USART1_Init 1 */
+
+  /* USER CODE END USART1_Init 1 */
+  huart1.Instance = USART1;
+  huart1.Init.BaudRate = 38400;
+  huart1.Init.WordLength = UART_WORDLENGTH_8B;
+  huart1.Init.StopBits = UART_STOPBITS_1;
+  huart1.Init.Parity = UART_PARITY_NONE;
+  huart1.Init.Mode = UART_MODE_TX_RX;
+  huart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart1.Init.OverSampling = UART_OVERSAMPLING_16;
+  huart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
+  huart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
+  if (HAL_UART_Init(&huart1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN USART1_Init 2 */
+
+  /* USER CODE END USART1_Init 2 */
+
+}
+
+/**
+  * @brief GPIO Initialization Function
+  * @param None
+  * @retval None
+  */
 static void MX_GPIO_Init(void)
 {
   GPIO_InitTypeDef GPIO_InitStruct = {0};
@@ -264,10 +420,10 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0|GPIO_PIN_3, GPIO_PIN_RESET);
 
-  /*Configure GPIO pin : PB0 */
-  GPIO_InitStruct.Pin = GPIO_PIN_0;
+  /*Configure GPIO pins : PB0 PB3 PB5 */
+  GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_3;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

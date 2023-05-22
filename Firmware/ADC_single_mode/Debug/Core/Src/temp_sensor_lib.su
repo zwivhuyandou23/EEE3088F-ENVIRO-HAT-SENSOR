@@ -1,0 +1,2 @@
+../Core/Src/temp_sensor_lib.c:3:6:temp_sensor_init_iic	24	static
+../Core/Src/temp_sensor_lib.c:50:9:temp_sensor_read	16	static
